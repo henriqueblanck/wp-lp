@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply font-sans text-gray-900 bg-white;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold leading-tight text-gray-900;
+  }
+  
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl;
+  }
+  
+  h2 {
+    @apply text-3xl md:text-4xl;
+  }
+  
+  h3 {
+    @apply text-2xl md:text-3xl;
+  }
+  
+  p {
+    @apply leading-relaxed;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center px-6 py-3 text-base font-medium transition-all duration-200 rounded-lg;
+  }
+  
+  .btn-primary {
+    @apply text-white bg-primary-500 hover:bg-primary-600 shadow-md hover:shadow-lg;
+  }
+  
+  .btn-secondary {
+    @apply text-primary-500 bg-white border border-primary-500 hover:bg-primary-50;
+  }
+  
+  .btn-whatsapp {
+    @apply text-white bg-whatsapp hover:bg-opacity-90 shadow-md hover:shadow-lg;
+  }
+  
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .card {
+    @apply bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden;
+  }
+  
+  .section {
+    @apply py-16 md:py-24;
+  }
+  
+  .section-title {
+    @apply text-center mb-12;
+  }
+  
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary-500 to-secondary-500 text-transparent bg-clip-text;
+  }
+  
+  .chat-bubble {
+    @apply relative p-4 rounded-lg max-w-xs;
+  }
+  
+  .chat-bubble-left {
+    @apply bg-gray-100 rounded-tl-none;
+  }
+  
+  .chat-bubble-right {
+    @apply bg-whatsapp text-white rounded-tr-none;
+  }
+}
+
+.floating-element {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}

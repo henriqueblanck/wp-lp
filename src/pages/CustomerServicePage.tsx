@@ -4,7 +4,6 @@ import FeatureSection from '../components/FeatureSection';
 import WhatsAppDemo from '../components/WhatsAppDemo';
 import CTASection from '../components/CTASection';
 import FAQSection from '../components/FAQSection';
-import ContactForm from '../components/ContactForm';
 import { 
   Calendar, 
   Users, 
@@ -19,6 +18,7 @@ import {
   CheckCircle,
   Zap
 } from 'lucide-react';
+import { WHATSAPP_LINK } from '../constants';
 
 const CustomerServicePage: React.FC = () => {
   const features = [
@@ -174,7 +174,7 @@ const CustomerServicePage: React.FC = () => {
               </ul>
               
               <div className="mt-8">
-                <a href="#precos" className="btn btn-primary">
+                <a href={WHATSAPP_LINK} className="btn btn-primary">
                   Ver planos e preços
                   <ArrowRight size={18} className="ml-2" />
                 </a>
@@ -236,7 +236,7 @@ const CustomerServicePage: React.FC = () => {
                 </div>
                 
                 <a
-                  href="#contato"
+                  href={WHATSAPP_LINK}
                   className={`btn w-full ${
                     plan.popular ? 'btn-primary' : 'btn-secondary'
                   }`}
@@ -250,7 +250,7 @@ const CustomerServicePage: React.FC = () => {
           <div className="mt-12 text-center">
             <p className="text-gray-600">
               Precisa de um plano personalizado? {' '}
-              <a href="#contato" className="text-primary-500 hover:underline">
+              <a href={WHATSAPP_LINK} className="text-primary-500 hover:underline">
                 Fale com nossa equipe
               </a>
             </p>
@@ -307,7 +307,7 @@ const CustomerServicePage: React.FC = () => {
                 </li>
               </ul>
               
-              <a href="#contato" className="btn btn-primary">
+              <a href={WHATSAPP_LINK} className="btn btn-primary">
                 Começar teste grátis
                 <ArrowRight size={18} className="ml-2" />
               </a>
@@ -324,8 +324,6 @@ const CustomerServicePage: React.FC = () => {
       />
       
       <FAQSection faqs={faqs} />
-      
-      <ContactForm />
     </>
   );
 };

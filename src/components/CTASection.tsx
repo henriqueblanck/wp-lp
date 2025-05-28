@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, MessageCircle } from 'lucide-react';
+import { WHATSAPP_LINK } from '../constants';
 
 interface CTASectionProps {
   title: string;
@@ -53,7 +54,7 @@ const CTASection: React.FC<CTASectionProps> = ({
               viewport={{ once: true }}
             >
               <a 
-                href="#contato" 
+                href={WHATSAPP_LINK}
                 className="btn bg-white text-primary-600 hover:bg-white/90 hover:text-primary-700 shadow-lg"
               >
                 <MessageCircle size={18} className="mr-2" />

@@ -16,7 +16,9 @@ import {
   Bot,
   ArrowRight,
   CheckCircle,
-  Zap
+  Zap,
+  Headphones,
+  MessageCircle
 } from 'lucide-react';
 import { WHATSAPP_LINK } from '../constants';
 
@@ -51,6 +53,16 @@ const CustomerServicePage: React.FC = () => {
       icon: <ClipboardList size={24} />,
       title: 'Gestão Completa',
       description: 'Histórico, tags, notas e informações dos clientes.'
+    },
+    {
+      icon: <Headphones size={24} />,
+      title: 'Filas e Departamentos',
+      description: 'Organize o atendimento por setores e prioridades.'
+    },
+    {
+      icon: <MessageCircle size={24} />,
+      title: 'Respostas Rápidas',
+      description: 'Templates personalizados para agilizar o atendimento.'
     }
   ];
   

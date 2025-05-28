@@ -137,7 +137,7 @@ const CustomerServicePage: React.FC = () => {
       <Hero
         title="Sistema Profissional de Atendimento para WhatsApp"
         subtitle="Gerencie sua equipe, automatize respostas e ofereça um atendimento excepcional com nossa plataforma completa."
-        image="https://images.pexels.com/photos/3977908/pexels-photo-3977908.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        image="https://images.pexels.com/photos/7709087/pexels-photo-7709087.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
         variant="service"
       />
       
@@ -196,7 +196,7 @@ const CustomerServicePage: React.FC = () => {
             <div className="relative">
               <div className="rounded-2xl shadow-xl overflow-hidden">
                 <img 
-                  src="https://images.pexels.com/photos/7709087/pexels-photo-7709087.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                  src="https://images.pexels.com/photos/3760263/pexels-photo-3760263.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
                   alt="Atendimento Multiagentes" 
                   className="w-full h-auto"
                 />
@@ -278,7 +278,7 @@ const CustomerServicePage: React.FC = () => {
             <div className="order-2 lg:order-1">
               <div className="relative rounded-2xl overflow-hidden shadow-xl">
                 <img 
-                  src="https://images.pexels.com/photos/7439146/pexels-photo-7439146.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                  src="https://images.pexels.com/photos/1181396/pexels-photo-1181396.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
                   alt="Gestão de Equipe" 
                   className="w-full h-auto"
                 />

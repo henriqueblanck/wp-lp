@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
           <div className="space-y-4">
             <div className="flex items-center">
               <img src="/logo.png" alt="ZyIA" className="h-11 w-auto" />
-              <span className="ml-2 text-xl font-bold">ZyIA</span>
+              <span className="ml-1 text-xl font-bold">ZyIA</span>
             </div>
             <p className="text-gray-400 text-sm">
               Transforme seu atendimento no WhatsApp com soluções inteligentes de automação e agendamento.

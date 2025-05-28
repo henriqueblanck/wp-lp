@@ -13,82 +13,125 @@ import {
   MessageSquare,
   Bell,
   Clock,
-  Tags
+  Tags,
+  Bot,
+  ArrowRight,
+  CheckCircle,
+  Zap
 } from 'lucide-react';
 
 const CustomerServicePage: React.FC = () => {
   const features = [
     {
-      icon: <Calendar size={24} />,
-      title: 'Agendamentos Automatizados',
-      description: 'Sistema completo para que clientes marquem horários diretamente pelo WhatsApp.'
-    },
-    {
       icon: <Users size={24} />,
       title: 'Multi-atendentes',
-      description: 'Distribua conversas entre sua equipe com roteamento inteligente baseado em habilidades.'
+      description: 'Distribua conversas entre sua equipe com roteamento inteligente.'
     },
     {
-      icon: <ClipboardList size={24} />,
-      title: 'Histórico Completo',
-      description: 'Acesse todo o histórico de interações com cada cliente para um atendimento personalizado.'
+      icon: <Calendar size={24} />,
+      title: 'Agendamentos',
+      description: 'Sistema completo para que clientes marquem horários pelo WhatsApp.'
+    },
+    {
+      icon: <Bot size={24} />,
+      title: 'Chatbot Integrado',
+      description: 'Automatize respostas frequentes e qualifique leads 24/7.'
     },
     {
       icon: <BarChart3 size={24} />,
-      title: 'Métricas de Desempenho',
-      description: 'Monitore tempo de resposta, satisfação do cliente e eficiência da equipe.'
-    },
-    {
-      icon: <MessageSquare size={24} />,
-      title: 'Modelos de Resposta',
-      description: 'Crie respostas rápidas para perguntas frequentes e agilize o atendimento.'
+      title: 'Métricas Detalhadas',
+      description: 'Acompanhe tempo de resposta, satisfação e eficiência da equipe.'
     },
     {
       icon: <Bell size={24} />,
-      title: 'Lembretes Automáticos',
-      description: 'Envie confirmações e lembretes de compromissos para reduzir faltas.'
+      title: 'Notificações',
+      description: 'Alertas de novas mensagens e distribuição inteligente.'
+    },
+    {
+      icon: <ClipboardList size={24} />,
+      title: 'Gestão Completa',
+      description: 'Histórico, tags, notas e informações dos clientes.'
     }
   ];
   
   const faqs = [
     {
-      question: 'Como funciona o sistema de agendamentos?',
-      answer: 'Nosso sistema permite que seus clientes consultem a disponibilidade e marquem compromissos diretamente pelo WhatsApp. Você configura seus horários de atendimento, serviços disponíveis e intervalos entre atendimentos, e o sistema gerencia automaticamente sua agenda, evitando conflitos.'
+      question: 'Como funciona o período de teste grátis?',
+      answer: 'Oferecemos 7 dias de teste grátis com todas as funcionalidades disponíveis. Não é necessário cartão de crédito para começar. Você poderá testar o sistema completo com sua equipe.'
     },
     {
-      question: 'É possível definir diferentes tipos de serviços com durações diferentes?',
-      answer: 'Sim, você pode cadastrar todos os seus serviços com suas respectivas durações, preços e profissionais responsáveis. O sistema considera essas informações ao mostrar horários disponíveis.'
+      question: 'Quantos atendentes posso ter?',
+      answer: 'Oferecemos planos flexíveis que se adaptam ao tamanho da sua equipe. Você pode começar com poucos atendentes e aumentar conforme sua necessidade. Cada atendente tem acesso individual ao sistema.'
     },
     {
-      question: 'Como são distribuídas as conversas entre a equipe de atendimento?',
-      answer: 'Oferecemos diferentes estratégias de distribuição: por disponibilidade, por habilidades específicas, por departamento ou de forma balanceada. Você também pode configurar regras de escalonamento para casos não resolvidos.'
+      question: 'É possível usar com múltiplos números de WhatsApp?',
+      answer: 'Sim! Você pode conectar vários números de WhatsApp e gerenciar todos através de uma única interface. Ideal para empresas com diferentes departamentos ou unidades.'
     },
     {
-      question: 'Os clientes recebem lembretes automáticos de seus agendamentos?',
-      answer: 'Sim! O sistema envia confirmações imediatas após o agendamento e lembretes configuráveis (ex: 1 dia ou 1 hora antes). Você personaliza as mensagens e o timing dos lembretes.'
+      question: 'Como funciona a integração com meu site?',
+      answer: 'Fornecemos um widget personalizado para seu site que direciona as conversas diretamente para o sistema. Também é possível integrar através de API para soluções mais específicas.'
     },
     {
-      question: 'Como gerenciar reagendamentos e cancelamentos?',
-      answer: 'Os clientes podem solicitar alterações ou cancelamentos diretamente pelo WhatsApp. O sistema valida a disponibilidade para reagendamentos e aplica suas políticas de cancelamento automaticamente.'
+      question: 'Oferece suporte para instalação?',
+      answer: 'Sim! Nossa equipe oferece suporte completo para configuração inicial, treinamento da sua equipe e ajustes conforme suas necessidades. Também disponibilizamos materiais de treinamento e documentação detalhada.'
+    }
+  ];
+
+  const pricingPlans = [
+    {
+      name: 'Básico',
+      price: 'R$ 147',
+      description: 'Ideal para pequenas empresas',
+      features: [
+        '2 usuários',
+        '1 número de WhatsApp',
+        'Chat multiagentes',
+        'Chatbot básico',
+        'Relatórios essenciais'
+      ]
     },
     {
-      question: 'É possível integrar com outros sistemas de agenda que já utilizamos?',
-      answer: 'Sim, oferecemos integrações com os principais sistemas de agenda do mercado, como Google Calendar, Microsoft Calendar, e diversas soluções específicas para segmentos como saúde e beleza.'
+      name: 'Profissional',
+      price: 'R$ 297',
+      description: 'Para empresas em crescimento',
+      features: [
+        '5 usuários',
+        '2 números de WhatsApp',
+        'Chat multiagentes',
+        'Chatbot avançado',
+        'Relatórios completos',
+        'API de integração'
+      ],
+      popular: true
+    },
+    {
+      name: 'Enterprise',
+      price: 'Sob consulta',
+      description: 'Soluções personalizadas',
+      features: [
+        'Usuários ilimitados',
+        'Números ilimitados',
+        'Chat multiagentes',
+        'Chatbot personalizado',
+        'Relatórios avançados',
+        'API completa',
+        'Suporte prioritário'
+      ]
     }
   ];
 
   return (
     <>
       <Hero
-        title="Atendimento e Agendamentos simplificados pelo WhatsApp"
-        subtitle="Gerencie sua equipe de atendimento e permita que clientes marquem horários diretamente pelo WhatsApp, sem complicações."
+        title="Sistema Profissional de Atendimento para WhatsApp"
+        subtitle="Gerencie sua equipe, automatize respostas e ofereça um atendimento excepcional com nossa plataforma completa."
         image="https://images.pexels.com/photos/3977908/pexels-photo-3977908.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
         variant="service"
       />
       
       <FeatureSection
-        title="Atendimento humano potencializado"
-        subtitle="Ferramentas que ajudam sua equipe a oferecer um atendimento excepcional, com agendamentos integrados e gestão eficiente."
+        title="Plataforma completa de atendimento"
+        subtitle="Todas as ferramentas que sua equipe precisa para oferecer um atendimento excepcional pelo WhatsApp."
         features={features}
         bgColor="bg-gray-50"
       />
@@ -96,186 +139,187 @@ const CustomerServicePage: React.FC = () => {
       <section className="section bg-white">
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div className="order-2 lg:order-1">
-              <h2 className="mb-6">Agendamentos simplificados</h2>
+            <div>
+              <h2 className="mb-6">Atendimento multiagentes</h2>
               <p className="text-gray-600 mb-6">
-                Permita que seus clientes consultem disponibilidade e marquem horários sem sair do WhatsApp. 
-                Um sistema completo de agendamentos que elimina ligações e otimiza sua agenda.
+                Distribua as conversas entre sua equipe de forma inteligente, monitore o desempenho 
+                e ofereça um atendimento profissional e organizado.
               </p>
               
-              <ul className="space-y-4 mb-8">
-                <li className="flex items-start">
-                  <div className="h-6 w-6 rounded-full bg-accent-100 text-accent-600 flex items-center justify-center flex-shrink-0 mt-0.5">
-                    <Clock size={14} />
+              <ul className="space-y-4">
+                <li className="flex items-center">
+                  <div className="h-6 w-6 rounded-full bg-success text-white flex items-center justify-center flex-shrink-0">
+                    <CheckCircle size={14} />
                   </div>
-                  <span className="ml-3">Configuração flexível de horários, serviços e profissionais</span>
+                  <span className="ml-3">Distribuição inteligente de conversas</span>
                 </li>
-                <li className="flex items-start">
-                  <div className="h-6 w-6 rounded-full bg-accent-100 text-accent-600 flex items-center justify-center flex-shrink-0 mt-0.5">
-                    <Clock size={14} />
+                <li className="flex items-center">
+                  <div className="h-6 w-6 rounded-full bg-success text-white flex items-center justify-center flex-shrink-0">
+                    <CheckCircle size={14} />
                   </div>
-                  <span className="ml-3">Lembretes automáticos para reduzir faltas e atrasos</span>
+                  <span className="ml-3">Chatbot para primeiro atendimento</span>
                 </li>
-                <li className="flex items-start">
-                  <div className="h-6 w-6 rounded-full bg-accent-100 text-accent-600 flex items-center justify-center flex-shrink-0 mt-0.5">
-                    <Clock size={14} />
+                <li className="flex items-center">
+                  <div className="h-6 w-6 rounded-full bg-success text-white flex items-center justify-center flex-shrink-0">
+                    <CheckCircle size={14} />
                   </div>
-                  <span className="ml-3">Confirmações, reagendamentos e cancelamentos automáticos</span>
+                  <span className="ml-3">Histórico completo de conversas</span>
                 </li>
-                <li className="flex items-start">
-                  <div className="h-6 w-6 rounded-full bg-accent-100 text-accent-600 flex items-center justify-center flex-shrink-0 mt-0.5">
-                    <Clock size={14} />
+                <li className="flex items-center">
+                  <div className="h-6 w-6 rounded-full bg-success text-white flex items-center justify-center flex-shrink-0">
+                    <CheckCircle size={14} />
                   </div>
-                  <span className="ml-3">Integração com Google Calendar, Outlook e outros sistemas</span>
+                  <span className="ml-3">Relatórios e métricas de atendimento</span>
                 </li>
               </ul>
               
-              <a href="#demo" className="btn btn-primary">
-                Ver demonstração
-              </a>
+              <div className="mt-8">
+                <a href="#precos" className="btn btn-primary">
+                  Ver planos e preços
+                  <ArrowRight size={18} className="ml-2" />
+                </a>
+              </div>
             </div>
             
-            <div className="order-1 lg:order-2 relative">
+            <div className="relative">
               <div className="rounded-2xl shadow-xl overflow-hidden">
                 <img 
                   src="https://images.pexels.com/photos/7709087/pexels-photo-7709087.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
-                  alt="Agendamento pelo WhatsApp" 
+                  alt="Atendimento Multiagentes" 
                   className="w-full h-auto"
                 />
-                <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/40"></div>
-              </div>
-              
-              <div className="absolute -bottom-6 -right-6 bg-white rounded-lg shadow-lg p-4 max-w-xs">
-                <div className="flex items-center mb-2">
-                  <Calendar size={18} className="text-accent-500 mr-2" />
-                  <span className="font-medium">Agendamento confirmado!</span>
-                </div>
-                <p className="text-sm text-gray-600">
-                  Seu horário foi agendado para 15/Mar às 14:00. Enviaremos um lembrete 2h antes.
-                </p>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+      
+      <section id="precos" className="section bg-gray-50">
+        <div className="container-custom">
+          <div className="text-center mb-16">
+            <h2 className="mb-4">Planos e Preços</h2>
+            <p className="text-gray-600 max-w-3xl mx-auto text-lg">
+              Escolha o plano ideal para seu negócio. Todos os planos incluem 7 dias de teste grátis.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {pricingPlans.map((plan, index) => (
+              <div 
+                key={index}
+                className={`card p-6 flex flex-col ${
+                  plan.popular ? 'border-2 border-primary-500 relative' : ''
+                }`}
+              >
+                {plan.popular && (
+                  <div className="absolute top-0 right-0 -mt-2 -mr-2 bg-primary-500 text-white px-3 py-1 text-xs font-bold rounded-full">
+                    Mais popular
+                  </div>
+                )}
+                
+                <div className="mb-6">
+                  <h3 className="text-xl font-semibold mb-2">{plan.name}</h3>
+                  <p className="text-gray-600 mb-4">{plan.description}</p>
+                  <div className="mt-4">
+                    <span className="text-4xl font-bold">{plan.price}</span>
+                    {plan.price !== 'Sob consulta' && <span className="text-gray-600 ml-2">/mês</span>}
+                  </div>
+                </div>
+                
+                <div className="space-y-3 mb-6 flex-grow">
+                  {plan.features.map((feature, featureIndex) => (
+                    <div key={featureIndex} className="flex items-center">
+                      <Zap size={16} className="text-success mr-2" />
+                      <span>{feature}</span>
+                    </div>
+                  ))}
+                </div>
+                
+                <a
+                  href="#contato"
+                  className={`btn w-full ${
+                    plan.popular ? 'btn-primary' : 'btn-secondary'
+                  }`}
+                >
+                  Começar teste grátis
+                </a>
+              </div>
+            ))}
+          </div>
+          
+          <div className="mt-12 text-center">
+            <p className="text-gray-600">
+              Precisa de um plano personalizado? {' '}
+              <a href="#contato" className="text-primary-500 hover:underline">
+                Fale com nossa equipe
+              </a>
+            </p>
           </div>
         </div>
       </section>
       
       <WhatsAppDemo demoType="service" />
       
-      <section className="section bg-gray-50">
+      <section className="section bg-white">
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div>
-              <img 
-                src="https://images.pexels.com/photos/7439146/pexels-photo-7439146.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
-                alt="Multi-atendimento" 
-                className="rounded-2xl shadow-xl w-full h-auto"
-              />
+            <div className="order-2 lg:order-1">
+              <div className="relative rounded-2xl overflow-hidden shadow-xl">
+                <img 
+                  src="https://images.pexels.com/photos/7439146/pexels-photo-7439146.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                  alt="Gestão de Equipe" 
+                  className="w-full h-auto"
+                />
+              </div>
             </div>
             
-            <div>
-              <h2 className="mb-6">Gerenciamento eficiente de equipe</h2>
+            <div className="order-1 lg:order-2">
+              <h2 className="mb-6">Gestão completa de atendimento</h2>
               <p className="text-gray-600 mb-6">
-                Distribua conversas entre sua equipe, monitore desempenho e ofereça um atendimento 
-                coordenado e eficiente, mesmo com múltiplos atendentes.
+                Todas as ferramentas que sua equipe precisa para oferecer um atendimento 
+                excepcional, com controle total e métricas detalhadas.
               </p>
               
-              <ul className="space-y-3 mb-8">
+              <ul className="space-y-4 mb-8">
                 <li className="flex items-start">
                   <div className="h-6 w-6 rounded-full bg-primary-100 text-primary-600 flex items-center justify-center flex-shrink-0 mt-0.5">
                     <Users size={14} />
                   </div>
-                  <span className="ml-3">Distribuição inteligente de conversas</span>
+                  <span className="ml-3">Gestão de filas e departamentos</span>
                 </li>
                 <li className="flex items-start">
                   <div className="h-6 w-6 rounded-full bg-primary-100 text-primary-600 flex items-center justify-center flex-shrink-0 mt-0.5">
                     <Users size={14} />
                   </div>
-                  <span className="ml-3">Transferência de atendimentos entre departamentos</span>
+                  <span className="ml-3">Tags e categorização de conversas</span>
                 </li>
                 <li className="flex items-start">
                   <div className="h-6 w-6 rounded-full bg-primary-100 text-primary-600 flex items-center justify-center flex-shrink-0 mt-0.5">
                     <Users size={14} />
                   </div>
-                  <span className="ml-3">Supervisão e monitoramento em tempo real</span>
+                  <span className="ml-3">Avaliação de satisfação do cliente</span>
                 </li>
                 <li className="flex items-start">
                   <div className="h-6 w-6 rounded-full bg-primary-100 text-primary-600 flex items-center justify-center flex-shrink-0 mt-0.5">
                     <Users size={14} />
                   </div>
-                  <span className="ml-3">Métricas de desempenho e produtividade</span>
+                  <span className="ml-3">Dashboard de performance em tempo real</span>
                 </li>
               </ul>
               
               <a href="#contato" className="btn btn-primary">
-                Falar com especialista
+                Começar teste grátis
+                <ArrowRight size={18} className="ml-2" />
               </a>
             </div>
           </div>
         </div>
       </section>
       
-      <section className="section bg-white">
-        <div className="container-custom">
-          <div className="text-center mb-16">
-            <h2 className="mb-4">Ideal para diversos segmentos</h2>
-            <p className="text-gray-600 max-w-3xl mx-auto text-lg">
-              Nossa solução de atendimento e agendamentos se adapta às necessidades específicas de diferentes tipos de negócio.
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="card p-6">
-              <div className="h-12 w-12 rounded-full bg-primary-100 text-primary-600 flex items-center justify-center mb-4">
-                <Tags size={24} />
-              </div>
-              <h3 className="text-xl font-semibold mb-3">Saúde e Bem-estar</h3>
-              <p className="text-gray-600 mb-4">
-                Clínicas médicas, consultórios, academias e profissionais de saúde podem gerenciar consultas e retornos com eficiência.
-              </p>
-              <ul className="space-y-2 text-sm text-gray-700">
-                <li>• Prontuários integrados</li>
-                <li>• Lembretes de preparo para exames</li>
-                <li>• Confirmação automática de consultas</li>
-              </ul>
-            </div>
-            
-            <div className="card p-6">
-              <div className="h-12 w-12 rounded-full bg-primary-100 text-primary-600 flex items-center justify-center mb-4">
-                <Tags size={24} />
-              </div>
-              <h3 className="text-xl font-semibold mb-3">Beleza e Estética</h3>
-              <p className="text-gray-600 mb-4">
-                Salões, barbearias e clínicas de estética podem gerenciar múltiplos profissionais e serviços.
-              </p>
-              <ul className="space-y-2 text-sm text-gray-700">
-                <li>• Agendamento por profissional</li>
-                <li>• Venda de produtos pelo WhatsApp</li>
-                <li>• Gestão de pacotes e fidelidade</li>
-              </ul>
-            </div>
-            
-            <div className="card p-6">
-              <div className="h-12 w-12 rounded-full bg-primary-100 text-primary-600 flex items-center justify-center mb-4">
-                <Tags size={24} />
-              </div>
-              <h3 className="text-xl font-semibold mb-3">Serviços Profissionais</h3>
-              <p className="text-gray-600 mb-4">
-                Advogados, contadores, consultores e outros profissionais podem organizar reuniões e consultorias.
-              </p>
-              <ul className="space-y-2 text-sm text-gray-700">
-                <li>• Reuniões com duração variável</li>
-                <li>• Coleta prévia de informações</li>
-                <li>• Documentos integrados</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-      
       <CTASection
-        title="Organize sua agenda e potencialize seu atendimento"
-        subtitle="Comece agora mesmo a oferecer agendamentos pelo WhatsApp e gerencie sua equipe com eficiência."
-        buttonText="Solicitar demonstração"
+        title="Comece seu teste grátis hoje mesmo"
+        subtitle="7 dias grátis com todas as funcionalidades. Sem compromisso."
+        buttonText="Começar agora"
         variant="dark"
       />
       

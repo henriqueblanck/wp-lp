@@ -13,82 +13,83 @@ import {
   ListFilter,
   BarChart,
   Repeat,
-  Zap
+  Zap,
+  Webhook,
+  Database,
+  Share2,
+  Settings,
+  ArrowRight
 } from 'lucide-react';
 
 const AIAutomationPage: React.FC = () => {
   const features = [
     {
       icon: <BrainCircuit size={24} />,
-      title: 'IA Avançada',
-      description: 'Modelos de linguagem de última geração que compreendem o contexto e intenção dos seus clientes.'
+      title: 'Automação Especializada',
+      description: 'Nossa equipe desenvolve fluxos automatizados personalizados para seu negócio.'
+    },
+    {
+      icon: <Webhook size={24} />,
+      title: 'Integrações Avançadas',
+      description: 'Conectamos seu WhatsApp com qualquer sistema ou API existente.'
+    },
+    {
+      icon: <Database size={24} />,
+      title: 'Gestão de Dados',
+      description: 'Coleta e organização inteligente das informações dos seus clientes.'
+    },
+    {
+      icon: <Share2 size={24} />,
+      title: 'APIs Personalizadas',
+      description: 'Desenvolvimento de integrações específicas para seu negócio.'
+    },
+    {
+      icon: <Settings size={24} />,
+      title: 'Implementação Completa',
+      description: 'Nossa equipe configura e personaliza toda a solução para você.'
     },
     {
       icon: <MessageSquare size={24} />,
-      title: 'Fluxos de Conversação',
-      description: 'Crie jornadas personalizadas com condicionais, variáveis e integrações para cada cenário.'
-    },
-    {
-      icon: <UserCheck size={24} />,
-      title: 'Qualificação de Leads',
-      description: 'Automatize a qualificação inicial de leads antes de direcionar para sua equipe de vendas.'
-    },
-    {
-      icon: <ListFilter size={24} />,
-      title: 'Segmentação Inteligente',
-      description: 'Categorize contatos automaticamente com base em interações e comportamentos.'
-    },
-    {
-      icon: <BarChart size={24} />,
-      title: 'Análise de Sentimento',
-      description: 'Identifique a satisfação do cliente em tempo real e tome ações apropriadas.'
-    },
-    {
-      icon: <Repeat size={24} />,
-      title: 'Aprendizado Contínuo',
-      description: 'Sistema que melhora com o tempo, aprendendo com as interações para respostas mais precisas.'
+      title: 'Suporte Especializado',
+      description: 'Acompanhamento contínuo e ajustes conforme suas necessidades.'
     }
   ];
   
   const faqs = [
     {
-      question: 'Como a IA do ZapFlow se diferencia de chatbots comuns?',
-      answer: 'Nossa IA utiliza modelos de linguagem avançados que compreendem contexto e nuances da comunicação humana, muito além de simples palavras-chave. Isso permite conversas mais naturais e respostas mais precisas, mesmo para perguntas complexas ou inéditas.'
+      question: 'Como funciona o processo de implementação?',
+      answer: 'Nossa equipe de especialistas analisa suas necessidades, desenvolve uma estratégia personalizada e implementa toda a solução. O processo inclui análise do negócio, desenvolvimento dos fluxos, integrações necessárias e acompanhamento contínuo.'
     },
     {
-      question: 'Posso personalizar as respostas da IA para meu negócio?',
-      answer: 'Absolutamente! Você pode treinar a IA com informações específicas do seu negócio, produtos, serviços e políticas. Também é possível definir o tom de voz e personalidade do atendimento automatizado.'
+      question: 'Que tipos de automação posso implementar?',
+      answer: 'As possibilidades são infinitas! Podemos automatizar atendimento inicial, qualificação de leads, vendas, suporte, integrações com seu CRM, ERP ou qualquer outro sistema. Nossa equipe avalia seu caso específico e desenvolve a melhor solução.'
     },
     {
-      question: 'A IA consegue identificar quando deve transferir para um atendente humano?',
-      answer: 'Sim, o sistema identifica automaticamente situações complexas, frustração do cliente ou solicitações específicas que necessitam intervenção humana, transferindo a conversa de forma suave para sua equipe.'
+      question: 'Quanto tempo leva para implementar?',
+      answer: 'O tempo varia conforme a complexidade do projeto. Após a análise inicial, fornecemos um cronograma detalhado. Tipicamente, projetos são implementados em 2-4 semanas.'
     },
     {
-      question: 'Como criar fluxos de conversação eficientes?',
-      answer: 'Nossa plataforma oferece um editor visual intuitivo onde você pode construir fluxos com condicionais, variáveis e integrações. Oferecemos também templates pré-configurados para os casos de uso mais comuns.'
+      question: 'É possível integrar com meus sistemas atuais?',
+      answer: 'Sim! Podemos integrar com qualquer sistema através de APIs. Nossa equipe técnica desenvolve integrações personalizadas para suas necessidades específicas.'
     },
     {
-      question: 'É possível integrar a IA com meu sistema de CRM ou e-commerce?',
-      answer: 'Sim, oferecemos integrações nativas com os principais sistemas de CRM e e-commerce do mercado, além de webhooks e API para integrações personalizadas.'
-    },
-    {
-      question: 'Quais métricas posso acompanhar nos fluxos de automação?',
-      answer: 'Você pode monitorar taxas de conclusão dos fluxos, pontos de abandono, tempo médio de conversação, satisfação do cliente, eficiência na resolução de problemas e conversão em vendas ou leads qualificados.'
+      question: 'Como é feita a manutenção dos fluxos?',
+      answer: 'Nossa equipe monitora continuamente o desempenho e faz ajustes conforme necessário. Você terá acesso a um especialista dedicado para solicitar alterações e melhorias.'
     }
   ];
 
   return (
     <>
       <Hero
-        title="Automatize seu WhatsApp com Inteligência Artificial"
-        subtitle="Transforme conversas em resultados com fluxos inteligentes que entendem seus clientes e geram mais negócios."
+        title="Automação Especializada para WhatsApp"
+        subtitle="Deixe nossa equipe de especialistas criar e implementar automações personalizadas para seu negócio, com suporte contínuo."
         image="https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
         variant="ai"
       />
       
       <FeatureSection
-        title="Automação que realmente funciona"
-        subtitle="Nossa tecnologia de IA vai além de simples respostas automáticas, criando experiências conversacionais que convertem."
+        title="Automação profissional completa"
+        subtitle="Nossa equipe implementa soluções personalizadas que automatizam seus processos e impulsionam resultados."
         features={features}
         bgColor="bg-gray-50"
       />
@@ -97,45 +98,51 @@ const AIAutomationPage: React.FC = () => {
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="mb-6">Fluxos inteligentes que entendem seu cliente</h2>
+              <h2 className="mb-6">Implementação especializada</h2>
               <p className="text-gray-600 mb-6">
-                Crie jornadas conversacionais que adaptam-se em tempo real às necessidades dos seus clientes.
-                Nossa IA avançada compreende intenções, contexto e sentimento.
+                Nossa equipe de especialistas cuida de todo o processo, desde a análise até a implementação e manutenção contínua da sua solução.
               </p>
               
               <ul className="space-y-4">
-                <li className="flex">
-                  <div className="h-6 w-6 rounded-full bg-success text-white flex items-center justify-center flex-shrink-0 mt-0.5">
+                <li className="flex items-center">
+                  <div className="h-6 w-6 rounded-full bg-success text-white flex items-center justify-center flex-shrink-0">
                     <Zap size={14} />
                   </div>
-                  <span className="ml-3">Redução de até 80% no tempo de atendimento</span>
+                  <span className="ml-3">Análise personalizada do seu negócio</span>
                 </li>
-                <li className="flex">
-                  <div className="h-6 w-6 rounded-full bg-success text-white flex items-center justify-center flex-shrink-0 mt-0.5">
+                <li className="flex items-center">
+                  <div className="h-6 w-6 rounded-full bg-success text-white flex items-center justify-center flex-shrink-0">
                     <Zap size={14} />
                   </div>
-                  <span className="ml-3">Atendimento 24/7 sem custos adicionais</span>
+                  <span className="ml-3">Desenvolvimento de fluxos customizados</span>
                 </li>
-                <li className="flex">
-                  <div className="h-6 w-6 rounded-full bg-success text-white flex items-center justify-center flex-shrink-0 mt-0.5">
+                <li className="flex items-center">
+                  <div className="h-6 w-6 rounded-full bg-success text-white flex items-center justify-center flex-shrink-0">
                     <Zap size={14} />
                   </div>
-                  <span className="ml-3">Qualificação automática de leads</span>
+                  <span className="ml-3">Implementação completa por especialistas</span>
                 </li>
-                <li className="flex">
-                  <div className="h-6 w-6 rounded-full bg-success text-white flex items-center justify-center flex-shrink-0 mt-0.5">
+                <li className="flex items-center">
+                  <div className="h-6 w-6 rounded-full bg-success text-white flex items-center justify-center flex-shrink-0">
                     <Zap size={14} />
                   </div>
-                  <span className="ml-3">Integração com seu CRM e outras ferramentas</span>
+                  <span className="ml-3">Suporte e manutenção contínua</span>
                 </li>
               </ul>
+              
+              <div className="mt-8">
+                <a href="#contato" className="btn btn-primary">
+                  Falar com especialista
+                  <ArrowRight size={18} className="ml-2" />
+                </a>
+              </div>
             </div>
             
             <div className="relative">
               <div className="rounded-2xl shadow-xl overflow-hidden">
                 <img 
                   src="https://images.pexels.com/photos/8438918/pexels-photo-8438918.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
-                  alt="AI Automation Flow" 
+                  alt="Implementação Especializada" 
                   className="w-full h-auto"
                 />
               </div>
@@ -143,16 +150,14 @@ const AIAutomationPage: React.FC = () => {
               <div className="absolute -top-5 -right-5 h-24 w-24 rounded-full bg-primary-500 flex items-center justify-center text-white font-bold text-lg shadow-lg">
                 <div className="text-center">
                   <div className="text-xs">Até</div>
-                  <div className="text-2xl">70%</div>
-                  <div className="text-xs">economia</div>
+                  <div className="text-2xl">80%</div>
+                  <div className="text-xs">mais eficiência</div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      
-      <WhatsAppDemo demoType="ai" />
       
       <section className="section bg-gray-50">
         <div className="container-custom">
@@ -161,7 +166,7 @@ const AIAutomationPage: React.FC = () => {
               <div className="relative rounded-2xl overflow-hidden shadow-xl">
                 <img 
                   src="https://images.pexels.com/photos/5926382/pexels-photo-5926382.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
-                  alt="Fluxo visual" 
+                  alt="Automação Personalizada" 
                   className="w-full h-auto"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
@@ -169,50 +174,111 @@ const AIAutomationPage: React.FC = () => {
             </div>
             
             <div className="order-1 lg:order-2">
-              <h2 className="mb-6">Editor visual intuitivo</h2>
+              <h2 className="mb-6">Automação que gera resultados</h2>
               <p className="text-gray-600 mb-6">
-                Crie fluxos complexos sem conhecimento técnico usando nossa interface drag-and-drop. 
-                Combine condicionais, variáveis, integrações e respostas dinâmicas.
+                Nossas soluções são desenvolvidas para maximizar seus resultados, com foco em eficiência e ROI.
               </p>
               
-              <ul className="space-y-3 mb-8">
+              <ul className="space-y-4 mb-8">
                 <li className="flex items-start">
                   <div className="h-6 w-6 rounded-full bg-primary-100 text-primary-600 flex items-center justify-center flex-shrink-0 mt-0.5">
                     <Bot size={14} />
                   </div>
-                  <span className="ml-3">Suporte a imagens, vídeos, arquivos e botões</span>
+                  <span className="ml-3">Atendimento 24/7 automatizado</span>
                 </li>
                 <li className="flex items-start">
                   <div className="h-6 w-6 rounded-full bg-primary-100 text-primary-600 flex items-center justify-center flex-shrink-0 mt-0.5">
                     <Bot size={14} />
                   </div>
-                  <span className="ml-3">Templates prontos para diferentes segmentos</span>
+                  <span className="ml-3">Integração com seus sistemas existentes</span>
                 </li>
                 <li className="flex items-start">
                   <div className="h-6 w-6 rounded-full bg-primary-100 text-primary-600 flex items-center justify-center flex-shrink-0 mt-0.5">
                     <Bot size={14} />
                   </div>
-                  <span className="ml-3">Múltiplos fluxos conectados para jornadas completas</span>
+                  <span className="ml-3">Coleta e organização de dados</span>
                 </li>
                 <li className="flex items-start">
                   <div className="h-6 w-6 rounded-full bg-primary-100 text-primary-600 flex items-center justify-center flex-shrink-0 mt-0.5">
                     <Bot size={14} />
                   </div>
-                  <span className="ml-3">Análise e otimização de desempenho em tempo real</span>
+                  <span className="ml-3">Relatórios e métricas detalhadas</span>
                 </li>
               </ul>
               
               <a href="#contato" className="btn btn-primary">
-                Experimente agora
+                Falar com especialista
+                <ArrowRight size={18} className="ml-2" />
               </a>
             </div>
           </div>
         </div>
       </section>
       
+      <section className="section bg-white">
+        <div className="container-custom">
+          <div className="text-center mb-16">
+            <h2 className="mb-4">Ideal para diversos segmentos</h2>
+            <p className="text-gray-600 max-w-3xl mx-auto text-lg">
+              Nossa equipe desenvolve soluções personalizadas para diferentes tipos de negócio
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="card p-6">
+              <div className="h-12 w-12 rounded-full bg-primary-100 text-primary-600 flex items-center justify-center mb-4">
+                <MessageSquare size={24} />
+              </div>
+              <h3 className="text-xl font-semibold mb-3">E-commerce</h3>
+              <p className="text-gray-600 mb-4">
+                Automatize vendas, suporte e pós-venda com integração completa ao seu sistema.
+              </p>
+              <ul className="space-y-2 text-sm text-gray-700">
+                <li>• Catálogo de produtos automático</li>
+                <li>• Carrinho de compras pelo WhatsApp</li>
+                <li>• Acompanhamento de pedidos</li>
+                <li>• Integração com plataforma de e-commerce</li>
+              </ul>
+            </div>
+            
+            <div className="card p-6">
+              <div className="h-12 w-12 rounded-full bg-primary-100 text-primary-600 flex items-center justify-center mb-4">
+                <MessageSquare size={24} />
+              </div>
+              <h3 className="text-xl font-semibold mb-3">Educação</h3>
+              <p className="text-gray-600 mb-4">
+                Gestão de matrículas, dúvidas e comunicação com alunos de forma automatizada.
+              </p>
+              <ul className="space-y-2 text-sm text-gray-700">
+                <li>• Processo de matrícula automatizado</li>
+                <li>• Distribuição de material didático</li>
+                <li>• Suporte ao aluno 24/7</li>
+                <li>• Integração com sistema acadêmico</li>
+              </ul>
+            </div>
+            
+            <div className="card p-6">
+              <div className="h-12 w-12 rounded-full bg-primary-100 text-primary-600 flex items-center justify-center mb-4">
+                <MessageSquare size={24} />
+              </div>
+              <h3 className="text-xl font-semibold mb-3">Imobiliárias</h3>
+              <p className="text-gray-600 mb-4">
+                Automatize captação de leads, agendamentos e envio de informações de imóveis.
+              </p>
+              <ul className="space-y-2 text-sm text-gray-700">
+                <li>• Catálogo de imóveis automático</li>
+                <li>• Agendamento de visitas</li>
+                <li>• Qualificação de leads</li>
+                <li>• Integração com CRM imobiliário</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      
       <CTASection
-        title="Automatize seu WhatsApp hoje mesmo"
-        subtitle="Comece a usar IA para qualificar leads, responder dúvidas e vender mais, 24 horas por dia."
+        title="Automatize seu WhatsApp com especialistas"
+        subtitle="Nossa equipe desenvolve e implementa a solução ideal para seu negócio. Fale com um especialista agora."
         buttonText="Começar agora"
         variant="default"
       />

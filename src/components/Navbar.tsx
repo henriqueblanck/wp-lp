@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, MessageCircle } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { WHATSAPP_LINK } from '../constants';
 
@@ -45,8 +45,7 @@ const Navbar: React.FC = () => {
         <div className="flex items-center justify-between">
           <div className="flex items-center">
             <Link to="/" className="flex items-center">
-              <MessageCircle className="h-8 w-8 text-whatsapp mr-2" />
-              <span className="text-xl font-bold">ZyIA</span>
+              <img src="/ChatGPT Image 28 de mai. de 2025, 13_17_48.png" alt="ZyIA" className="h-8 w-auto" />
             </Link>
             
             {/* Desktop Navigation */}

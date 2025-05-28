@@ -1,5 +1,5 @@
 import React from 'react';
-import { MessageCircle, Instagram, Facebook, Linkedin } from 'lucide-react';
+import { Instagram, Facebook, Linkedin } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
@@ -9,8 +9,7 @@ const Footer: React.FC = () => {
           {/* Brand and description */}
           <div className="space-y-4">
             <div className="flex items-center">
-              <MessageCircle className="h-8 w-8 text-whatsapp mr-2" />
-              <span className="text-xl font-bold text-white">ZyIA</span>
+              <img src="/ChatGPT Image 28 de mai. de 2025, 13_17_48.png" alt="ZyIA" className="h-8 w-auto" />
             </div>
             <p className="text-gray-400 text-sm">
               Transforme seu atendimento no WhatsApp com soluções inteligentes de automação e agendamento.

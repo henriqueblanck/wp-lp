@@ -37,6 +37,8 @@ const FeatureSection: React.FC<FeatureSectionProps> = ({
     show: { opacity: 1, y: 0 }
   };
 
+  const gridCols = features.length === 8 ? 'lg:grid-cols-4' : 'lg:grid-cols-3';
+
   return (
     <section className={`section ${bgColor}`}>
       <div className="container-custom">
@@ -52,7 +54,7 @@ const FeatureSection: React.FC<FeatureSectionProps> = ({
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, amount: 0.3 }}
-          className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 ${reversed ? 'md:flex-row-reverse' : ''}`}
+          className={`grid grid-cols-1 sm:grid-cols-2 ${gridCols} gap-8 ${reversed ? 'md:flex-row-reverse' : ''}`}
         >
           {features.map((feature, index) => (
             <motion.div

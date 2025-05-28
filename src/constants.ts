@@ -1,1 +1,1 @@
-export const WHATSAPP_LINK = 'https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20o%20ZapFlow.';
+export const WHATSAPP_LINK = 'https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20o%20ZyIA.';

@@ -46,7 +46,7 @@ const Navbar: React.FC = () => {
           <div className="flex items-center">
             <Link to="/" className="flex items-center">
               <MessageCircle className="h-8 w-8 text-whatsapp mr-2" />
-              <span className="text-xl font-bold">ZapFlow</span>
+              <span className="text-xl font-bold">ZyIA</span>
             </Link>
             
             {/* Desktop Navigation */}

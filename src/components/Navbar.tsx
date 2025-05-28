@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, MessageCircle } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { WHATSAPP_LINK } from '../constants';
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -41,9 +42,7 @@ const Navbar: React.FC = () => {
         { title: 'Automação Especializada', path: '/automacao-ia' },
         { title: 'Atendimento Multi-agentes', path: '/atendimento' }
       ]
-    },
-    { title: 'Preços', path: '/#precos' },
-    { title: 'Contato', path: '/#contato' },
+    }
   ];
 
   return (
@@ -112,9 +111,9 @@ const Navbar: React.FC = () => {
         </div>
         
         <div className="hidden md:block">
-          <Link to="/#contato" className="btn btn-primary">
+          <a href={WHATSAPP_LINK} className="btn btn-primary">
             Falar com especialista
-          </Link>
+          </a>
         </div>
         
         {/* Mobile menu button */}
@@ -166,12 +165,12 @@ const Navbar: React.FC = () => {
                 </Link>
               )
             ))}
-            <Link 
-              to="/#contato" 
+            <a 
+              href={WHATSAPP_LINK}
               className="btn btn-primary mt-4 text-center"
             >
               Falar com especialista
-            </Link>
+            </a>
           </div>
         </motion.div>
       )}

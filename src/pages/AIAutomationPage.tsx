@@ -1,10 +1,8 @@
 import React from 'react';
 import Hero from '../components/Hero';
 import FeatureSection from '../components/FeatureSection';
-import WhatsAppDemo from '../components/WhatsAppDemo';
 import CTASection from '../components/CTASection';
 import FAQSection from '../components/FAQSection';
-import ContactForm from '../components/ContactForm';
 import { 
   Bot, 
   BrainCircuit, 
@@ -20,6 +18,7 @@ import {
   Settings,
   ArrowRight
 } from 'lucide-react';
+import { WHATSAPP_LINK } from '../constants';
 
 const AIAutomationPage: React.FC = () => {
   const features = [
@@ -131,7 +130,7 @@ const AIAutomationPage: React.FC = () => {
               </ul>
               
               <div className="mt-8">
-                <a href="#contato" className="btn btn-primary">
+                <a href={WHATSAPP_LINK} className="btn btn-primary">
                   Falar com especialista
                   <ArrowRight size={18} className="ml-2" />
                 </a>
@@ -206,7 +205,7 @@ const AIAutomationPage: React.FC = () => {
                 </li>
               </ul>
               
-              <a href="#contato" className="btn btn-primary">
+              <a href={WHATSAPP_LINK} className="btn btn-primary">
                 Falar com especialista
                 <ArrowRight size={18} className="ml-2" />
               </a>
@@ -284,8 +283,6 @@ const AIAutomationPage: React.FC = () => {
       />
       
       <FAQSection faqs={faqs} />
-      
-      <ContactForm />
     </>
   );
 };

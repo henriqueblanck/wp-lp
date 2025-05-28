@@ -95,11 +95,11 @@ const WhatsAppDemo: React.FC<WhatsAppDemoProps> = ({ demoType = 'ai' }) => {
     <section id="demo" className="section bg-gray-50">
       <div className="container-custom">
         <div className="text-center mb-16">
-          <h2 className="mb-4">Veja o ZapFlow em ação</h2>
+          <h2 className="mb-4">Veja o ZyIA em ação</h2>
           <p className="text-gray-600 max-w-3xl mx-auto text-lg">
             {demoType === 'ai' 
               ? 'Experimente como a automação inteligente pode transformar seu atendimento.' 
-              : 'Veja como o agendamento e atendimento ficam simples com o ZapFlow.'}
+              : 'Veja como o agendamento e atendimento ficam simples com o ZyIA.'}
           </p>
         </div>
         

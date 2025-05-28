@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { MessageCircle, Instagram, Facebook, Linkedin, Twitter } from 'lucide-react';
+import { MessageCircle, Instagram, Facebook, Linkedin } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
     <footer className="bg-gray-900 text-white">
       <div className="container-custom py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Brand and description */}
           <div className="space-y-4">
             <Link to="/" className="flex items-center">
@@ -25,9 +25,6 @@ const Footer: React.FC = () => {
               </a>
               <a href="#" className="text-gray-400 hover:text-white transition-colors">
                 <Linkedin size={20} />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                <Twitter size={20} />
               </a>
             </div>
           </div>
@@ -50,65 +47,6 @@ const Footer: React.FC = () => {
                 <Link to="/atendimento" className="text-gray-400 hover:text-white transition-colors">
                   Atendimento
                 </Link>
-              </li>
-              <li>
-                <Link to="/#precos" className="text-gray-400 hover:text-white transition-colors">
-                  Preços
-                </Link>
-              </li>
-            </ul>
-          </div>
-          
-          {/* Resources */}
-          <div className="space-y-4">
-            <h3 className="text-lg font-semibold">Recursos</h3>
-            <ul className="space-y-2">
-              <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                  Blog
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                  Documentação
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                  Tutoriais
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                  Suporte
-                </a>
-              </li>
-            </ul>
-          </div>
-          
-          {/* Legal */}
-          <div className="space-y-4">
-            <h3 className="text-lg font-semibold">Legal</h3>
-            <ul className="space-y-2">
-              <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                  Termos de Serviço
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                  Política de Privacidade
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                  Cookies
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                  Licenças
-                </a>
               </li>
             </ul>
           </div>

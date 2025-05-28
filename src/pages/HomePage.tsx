@@ -5,7 +5,6 @@ import FeatureSection from '../components/FeatureSection';
 import TestimonialSection from '../components/TestimonialSection';
 import FAQSection from '../components/FAQSection';
 import CTASection from '../components/CTASection';
-import ContactForm from '../components/ContactForm';
 import { 
   Bot, 
   Users,
@@ -14,8 +13,10 @@ import {
   Calendar,
   BarChart3,
   Settings,
-  Headphones
+  Headphones,
+  ArrowRight
 } from 'lucide-react';
+import { WHATSAPP_LINK } from '../constants';
 
 const HomePage: React.FC = () => {
   const features = [
@@ -143,9 +144,7 @@ const HomePage: React.FC = () => {
                 </ul>
                 <span className="inline-flex items-center text-primary-500 font-medium group-hover:text-white transition-colors">
                   Saiba mais
-                  <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
+                  <ArrowRight size={18} className="ml-2" />
                 </span>
               </div>
             </Link>
@@ -181,9 +180,7 @@ const HomePage: React.FC = () => {
                 </ul>
                 <span className="inline-flex items-center text-secondary-500 font-medium group-hover:text-white transition-colors">
                   Saiba mais
-                  <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
+                  <ArrowRight size={18} className="ml-2" />
                 </span>
               </div>
             </Link>
@@ -200,8 +197,6 @@ const HomePage: React.FC = () => {
       />
       
       <FAQSection faqs={faqs} />
-      
-      <ContactForm />
     </>
   );
 };

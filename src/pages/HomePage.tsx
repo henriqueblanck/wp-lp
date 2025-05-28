@@ -44,7 +44,7 @@ const HomePage: React.FC = () => {
   
   const testimonials = [
     {
-      content: 'A equipe do ZapFlow desenvolveu uma automação que superou nossas expectativas. O processo foi muito profissional e os resultados são impressionantes.',
+      content: 'A equipe do ZyIA desenvolveu uma automação que superou nossas expectativas. O processo foi muito profissional e os resultados são impressionantes.',
       author: 'Ricardo Santos',
       role: 'Diretor Comercial',
       company: 'Tech Solutions',

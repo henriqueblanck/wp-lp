@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
           {/* Brand and description */}
           <div className="space-y-4">
             <div className="flex items-center">
-              <img src="/ChatGPT Image 28 de mai. de 2025, 13_17_48.png" alt="ZyIA" className="h-8 w-auto" />
+              <img src="/logo.png" alt="ZyIA" className="h-8 w-auto" />
             </div>
             <p className="text-gray-400 text-sm">
               Transforme seu atendimento no WhatsApp com soluções inteligentes de automação e agendamento.

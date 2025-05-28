@@ -45,7 +45,7 @@ const Navbar: React.FC = () => {
         <div className="flex items-center justify-between">
           <div className="flex items-center">
             <Link to="/" className="flex items-center">
-              <img src="/ChatGPT Image 28 de mai. de 2025, 13_17_48.png" alt="ZyIA" className="h-8 w-auto" />
+              <img src="/logo.png" alt="ZyIA" className="h-8 w-auto" />
             </Link>
             
             {/* Desktop Navigation */}

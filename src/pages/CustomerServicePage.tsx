@@ -186,7 +186,7 @@ const CustomerServicePage: React.FC = () => {
               </ul>
               
               <div className="mt-8">
-                <a href={WHATSAPP_LINK} className="btn btn-primary">
+                <a href="#precos" className="btn btn-primary">
                   Ver planos e preços
                   <ArrowRight size={18} className="ml-2" />
                 </a>

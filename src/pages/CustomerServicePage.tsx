@@ -131,6 +131,7 @@ const CustomerServicePage: React.FC = () => {
         subtitle="Gerencie sua equipe, automatize respostas e ofereça um atendimento excepcional com nossa plataforma completa."
         image="https://images.pexels.com/photos/7709087/pexels-photo-7709087.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
         variant="service"
+        showButtons={false}
       />
       
       <FeatureSection

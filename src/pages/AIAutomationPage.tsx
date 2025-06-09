@@ -87,6 +87,7 @@ const AIAutomationPage: React.FC = () => {
         subtitle="Deixe nossa equipe de especialistas criar e implementar automações personalizadas para seu negócio, com suporte contínuo."
         image="https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
         variant="ai"
+        showButtons={false}
       />
       
       <FeatureSection
@@ -149,7 +150,7 @@ const AIAutomationPage: React.FC = () => {
                 />
               </div>
               
-              {/* Opção 1: Badge retangular mais largo */}
+              {/* Badge de eficiência */}
               <div className="absolute -top-4 -right-4 bg-primary-500 text-white px-4 py-3 rounded-xl shadow-lg">
                 <div className="text-center">
                   <div className="text-2xl font-bold">80%</div>

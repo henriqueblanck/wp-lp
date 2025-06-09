@@ -94,6 +94,7 @@ const HomePage: React.FC = () => {
         title="Transforme seu WhatsApp em uma ferramenta profissional de atendimento"
         subtitle="Soluções completas de automação especializada e atendimento multi-agentes para elevar seu negócio ao próximo nível."
         ctaText="Falar com especialista"
+        ctaLink="#contato"
         image="https://images.pexels.com/photos/3182833/pexels-photo-3182833.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
       />
       

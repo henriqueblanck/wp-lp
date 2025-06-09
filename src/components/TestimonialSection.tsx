@@ -22,7 +22,7 @@ const TestimonialSection: React.FC<TestimonialSectionProps> = ({ testimonials })
         <div className="text-center mb-16">
           <h2 className="mb-4">O que nossos clientes dizem</h2>
           <p className="text-gray-600 max-w-3xl mx-auto text-lg">
-            Veja como o ZyIA tem transformado empresas e aumentado sua produtividade no WhatsApp.
+            Veja como o ZyIA tem transformado empresas, aumentado vendas e impulsionado a produtividade no WhatsApp.
           </p>
         </div>
         

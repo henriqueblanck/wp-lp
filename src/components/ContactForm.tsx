@@ -24,7 +24,7 @@ const ContactForm: React.FC = () => {
           <div className="text-center mb-12">
             <h2 className="mb-4">Entre em contato</h2>
             <p className="text-gray-600 text-lg">
-              Quer saber mais sobre como o ZyIA pode ajudar seu negócio? 
+              Quer saber mais sobre como o ZyIA pode aumentar suas vendas e transformar seu negócio? 
               Preencha o formulário abaixo e entraremos em contato em breve.
             </p>
           </div>
@@ -113,8 +113,8 @@ const ContactForm: React.FC = () => {
                   className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
                 >
                   <option value="" disabled selected>Selecione uma opção</option>
-                  <option value="automation">Automação com IA</option>
-                  <option value="service">Atendimento e agendamentos</option>
+                  <option value="automation">Automação com IA para vendas</option>
+                  <option value="service">Atendimento e vendas multiagentes</option>
                   <option value="both">Ambos</option>
                   <option value="other">Outro</option>
                 </select>
@@ -129,7 +129,7 @@ const ContactForm: React.FC = () => {
                   name="message"
                   rows={4}
                   className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
-                  placeholder="Como podemos ajudar você?"
+                  placeholder="Como podemos ajudar a aumentar suas vendas?"
                 ></textarea>
               </div>
               

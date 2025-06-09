@@ -98,8 +98,8 @@ const WhatsAppDemo: React.FC<WhatsAppDemoProps> = ({ demoType = 'ai' }) => {
           <h2 className="mb-4">Veja o ZyIA em ação</h2>
           <p className="text-gray-600 max-w-3xl mx-auto text-lg">
             {demoType === 'ai' 
-              ? 'Experimente como a automação inteligente pode transformar suas vendas e conversões.' 
-              : 'Veja como o agendamento comercial e gestão de vendas ficam simples com o ZyIA.'}
+              ? 'Experimente como a automação inteligente pode transformar seu atendimento.' 
+              : 'Veja como o agendamento e atendimento ficam simples com o ZyIA.'}
           </p>
         </div>
         

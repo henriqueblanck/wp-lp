@@ -23,22 +23,22 @@ const HomePage: React.FC = () => {
     {
       icon: <Bot size={24} />,
       title: 'Automação Especializada',
-      description: 'Deixe nossa equipe de especialistas criar fluxos automatizados personalizados para aumentar suas vendas e conversões.'
+      description: 'Deixe nossa equipe de especialistas criar fluxos automatizados personalizados para seu negócio, aumentando eficiência e resultados.'
     },
     {
       icon: <Users size={24} />,
       title: 'Multi-atendentes',
-      description: 'Gerencie sua equipe de vendas com eficiência, distribuindo leads e oportunidades de forma inteligente.'
+      description: 'Gerencie sua equipe de atendimento com eficiência, distribuindo conversas de forma inteligente e organizada.'
     },
     {
       icon: <Calendar size={24} />,
       title: 'Agendamentos',
-      description: 'Sistema completo para que seus clientes agendem reuniões comerciais e demonstrações diretamente pelo WhatsApp.'
+      description: 'Sistema completo para que seus clientes agendem serviços diretamente pelo WhatsApp, facilitando conversões.'
     },
     {
       icon: <BarChart3 size={24} />,
       title: 'Relatórios Detalhados',
-      description: 'Acompanhe métricas importantes do seu atendimento e performance da sua equipe comercial.'
+      description: 'Acompanhe métricas importantes do seu atendimento e performance para tomar decisões baseadas em dados.'
     }
   ];
   
@@ -91,15 +91,15 @@ const HomePage: React.FC = () => {
   return (
     <>
       <Hero
-        title="Transforme seu WhatsApp em uma ferramenta profissional de atendimento e vendas"
-        subtitle="Soluções completas de automação especializada e atendimento multi-agentes para elevar suas vendas e resultados ao próximo nível."
+        title="Transforme seu WhatsApp em uma ferramenta profissional de atendimento"
+        subtitle="Soluções completas de automação especializada e atendimento multi-agentes para elevar seu negócio ao próximo nível."
+        ctaText="Falar com especialista"
         image="https://images.pexels.com/photos/3182833/pexels-photo-3182833.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-        showButtons={false}
       />
       
       <FeatureSection
-        title="Soluções completas para vendas no WhatsApp"
-        subtitle="Escolha a solução ideal para aumentar suas vendas e conte com nossa expertise para implementação e suporte."
+        title="Soluções completas para seu WhatsApp"
+        subtitle="Escolha a solução ideal para seu negócio e conte com nossa expertise para implementação e suporte."
         features={features}
       />
       
@@ -108,7 +108,7 @@ const HomePage: React.FC = () => {
           <div className="text-center mb-16">
             <h2 className="mb-4">Nossas Soluções</h2>
             <p className="text-gray-600 max-w-3xl mx-auto text-lg">
-              Escolha a solução que melhor atende às necessidades do seu negócio e impulsiona suas vendas
+              Escolha a solução que melhor atende às necessidades do seu negócio
             </p>
           </div>
           
@@ -126,7 +126,7 @@ const HomePage: React.FC = () => {
                   Automação Especializada
                 </h3>
                 <p className="text-gray-600 mb-6 group-hover:text-white/90 transition-colors">
-                  Deixe nossa equipe de especialistas criar automações personalizadas para aumentar suas vendas, com implementação completa e suporte contínuo.
+                  Deixe nossa equipe de especialistas criar automações personalizadas para seu negócio, com implementação completa e suporte contínuo.
                 </p>
                 <ul className="space-y-3 mb-6">
                   <li className="flex items-center text-gray-700 group-hover:text-white/90 transition-colors">
@@ -135,7 +135,7 @@ const HomePage: React.FC = () => {
                   </li>
                   <li className="flex items-center text-gray-700 group-hover:text-white/90 transition-colors">
                     <Zap size={16} className="mr-2" />
-                    <span>Fluxos de vendas personalizados</span>
+                    <span>Fluxos personalizados</span>
                   </li>
                   <li className="flex items-center text-gray-700 group-hover:text-white/90 transition-colors">
                     <Zap size={16} className="mr-2" />
@@ -162,16 +162,16 @@ const HomePage: React.FC = () => {
                   Atendimento Multi-agentes
                 </h3>
                 <p className="text-gray-600 mb-6 group-hover:text-white/90 transition-colors">
-                  Sistema completo para gestão de vendas com múltiplos agentes, filas de leads, departamentos comerciais e muito mais.
+                  Sistema completo para gestão de atendimento com múltiplos agentes, filas, departamentos e muito mais.
                 </p>
                 <ul className="space-y-3 mb-6">
                   <li className="flex items-center text-gray-700 group-hover:text-white/90 transition-colors">
                     <Zap size={16} className="mr-2" />
-                    <span>Gestão de equipe de vendas</span>
+                    <span>Gestão de equipe</span>
                   </li>
                   <li className="flex items-center text-gray-700 group-hover:text-white/90 transition-colors">
                     <Zap size={16} className="mr-2" />
-                    <span>Sistema de agendamentos comerciais</span>
+                    <span>Sistema de agendamentos</span>
                   </li>
                   <li className="flex items-center text-gray-700 group-hover:text-white/90 transition-colors">
                     <Zap size={16} className="mr-2" />
@@ -191,10 +191,9 @@ const HomePage: React.FC = () => {
       <TestimonialSection testimonials={testimonials} />
       
       <CTASection
-        title="Pronto para aumentar suas vendas no WhatsApp?"
-        subtitle="Fale com nossos especialistas e descubra a melhor solução para impulsionar suas vendas e resultados."
+        title="Pronto para profissionalizar seu atendimento?"
+        subtitle="Fale com nossos especialistas e descubra a melhor solução para seu negócio."
         buttonText="Falar com especialista"
-        linkType="default"
       />
       
       <FAQSection faqs={faqs} />

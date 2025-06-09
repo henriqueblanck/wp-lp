@@ -64,10 +64,6 @@ const Hero: React.FC<HeroProps> = ({
                 {ctaText}
                 <ArrowRight size={18} className="ml-2" />
               </a>
-              
-              <a href="#demo" className="btn btn-secondary">
-                Ver demonstração
-              </a>
             </div>
           </motion.div>
           
@@ -92,7 +88,7 @@ const Hero: React.FC<HeroProps> = ({
                     <MessageCircle size={20} className="text-white" />
                   </div>
                   <div className="ml-3">
-                    <p className="text-sm font-medium">ZapFlow</p>
+                    <p className="text-sm font-medium">ZyIA</p>
                     <p className="text-xs text-gray-500">Automação Inteligente para WhatsApp</p>
                   </div>
                 </div>

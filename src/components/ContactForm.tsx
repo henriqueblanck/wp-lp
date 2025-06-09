@@ -24,7 +24,7 @@ const ContactForm: React.FC = () => {
           <div className="text-center mb-12">
             <h2 className="mb-4">Entre em contato</h2>
             <p className="text-gray-600 text-lg">
-              Quer saber mais sobre como o ZapFlow pode ajudar seu negócio? 
+              Quer saber mais sobre como o ZyIA pode ajudar seu negócio? 
               Preencha o formulário abaixo e entraremos em contato em breve.
             </p>
           </div>
@@ -142,7 +142,7 @@ const ContactForm: React.FC = () => {
                     className="mt-1 h-4 w-4 text-primary-600 focus:ring-primary-500"
                   />
                   <span className="ml-2 text-sm text-gray-600">
-                    Concordo em receber comunicações do ZapFlow e aceito os{' '}
+                    Concordo em receber comunicações do ZyIA e aceito os{' '}
                     <a href="#" className="text-primary-600 hover:underline">
                       Termos de Serviço
                     </a>{' '}

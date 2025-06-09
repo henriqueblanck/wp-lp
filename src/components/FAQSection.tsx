@@ -59,7 +59,7 @@ const FAQSection: React.FC<FAQSectionProps> = ({ faqs }) => {
         <div className="text-center mb-16">
           <h2 className="mb-4">Perguntas Frequentes</h2>
           <p className="text-gray-600 max-w-3xl mx-auto text-lg">
-            Encontre respostas para as perguntas mais comuns sobre o ZapFlow.
+            Encontre respostas para as perguntas mais comuns sobre o ZyIA.
           </p>
         </div>
         

@@ -27,57 +27,57 @@ const CustomerServicePage: React.FC = () => {
     {
       icon: <Users size={24} />,
       title: 'Multi-atendentes',
-      description: 'Distribua conversas entre sua equipe com roteamento inteligente.'
+      description: 'Distribua leads e oportunidades entre sua equipe de vendas com roteamento inteligente.'
     },
     {
       icon: <Calendar size={24} />,
-      title: 'Agendamentos',
-      description: 'Sistema completo para que clientes marquem horários pelo WhatsApp.'
+      title: 'Agendamentos Comerciais',
+      description: 'Sistema completo para que prospects agendem reuniões e demonstrações pelo WhatsApp.'
     },
     {
       icon: <Bot size={24} />,
-      title: 'Chatbot Integrado',
-      description: 'Automatize respostas frequentes e qualifique leads 24/7.'
+      title: 'Chatbot de Vendas',
+      description: 'Qualifique leads automaticamente e direcione oportunidades para sua equipe 24/7.'
     },
     {
       icon: <BarChart3 size={24} />,
-      title: 'Métricas Detalhadas',
-      description: 'Acompanhe tempo de resposta, satisfação e eficiência da equipe.'
+      title: 'Métricas de Vendas',
+      description: 'Acompanhe conversões, tempo de resposta e performance da equipe comercial.'
     },
     {
       icon: <Bell size={24} />,
-      title: 'Notificações',
-      description: 'Alertas de novas mensagens e distribuição inteligente.'
+      title: 'Notificações de Leads',
+      description: 'Alertas de novos leads e distribuição inteligente para sua equipe.'
     },
     {
       icon: <ClipboardList size={24} />,
-      title: 'Gestão Completa',
-      description: 'Histórico, tags, notas e informações dos clientes.'
+      title: 'Gestão de Pipeline',
+      description: 'Histórico, tags, notas e acompanhamento completo do funil de vendas.'
     },
     {
       icon: <Headphones size={24} />,
-      title: 'Filas e Departamentos',
-      description: 'Organize o atendimento por setores e prioridades.'
+      title: 'Filas de Vendas',
+      description: 'Organize o atendimento por produtos, serviços e prioridades comerciais.'
     },
     {
       icon: <MessageCircle size={24} />,
-      title: 'Respostas Rápidas',
-      description: 'Templates personalizados para agilizar o atendimento.'
+      title: 'Scripts de Vendas',
+      description: 'Templates personalizados para agilizar o processo comercial.'
     }
   ];
   
   const faqs = [
     {
       question: 'Como funciona o período de teste grátis?',
-      answer: 'Oferecemos 7 dias de teste grátis com todas as funcionalidades disponíveis. Não é necessário cartão de crédito para começar. Você poderá testar o sistema completo com sua equipe.'
+      answer: 'Oferecemos 7 dias de teste grátis com todas as funcionalidades disponíveis. Não é necessário cartão de crédito para começar. Você poderá testar o sistema completo com sua equipe de vendas.'
     },
     {
-      question: 'Quantos atendentes posso ter?',
-      answer: 'Oferecemos planos flexíveis que se adaptam ao tamanho da sua equipe. Você pode começar com poucos atendentes e aumentar conforme sua necessidade. Cada atendente tem acesso individual ao sistema.'
+      question: 'Quantos vendedores posso ter?',
+      answer: 'Oferecemos planos flexíveis que se adaptam ao tamanho da sua equipe comercial. Você pode começar com poucos vendedores e aumentar conforme sua necessidade. Cada vendedor tem acesso individual ao sistema.'
     },
     {
       question: 'É possível usar com múltiplos números de WhatsApp?',
-      answer: 'Sim! Você pode conectar vários números de WhatsApp e gerenciar todos através de uma única interface. Ideal para empresas com diferentes departamentos ou unidades.'
+      answer: 'Sim! Você pode conectar vários números de WhatsApp e gerenciar todos através de uma única interface. Ideal para empresas com diferentes produtos ou unidades de negócio.'
     }
   ];
 
@@ -85,7 +85,7 @@ const CustomerServicePage: React.FC = () => {
     {
       name: 'Básico',
       price: 'R$ 147',
-      description: 'Ideal para pequenas empresas',
+      description: 'Ideal para pequenas equipes de vendas',
       features: [
         '2 usuários',
         '1 número de WhatsApp',
@@ -97,7 +97,7 @@ const CustomerServicePage: React.FC = () => {
     {
       name: 'Profissional',
       price: 'R$ 297',
-      description: 'Para empresas em crescimento',
+      description: 'Para equipes comerciais em crescimento',
       features: [
         '5 usuários',
         '2 números de WhatsApp',
@@ -111,7 +111,7 @@ const CustomerServicePage: React.FC = () => {
     {
       name: 'Enterprise',
       price: 'Sob consulta',
-      description: 'Soluções personalizadas',
+      description: 'Soluções personalizadas para vendas',
       features: [
         'Usuários ilimitados',
         'Números ilimitados',
@@ -127,16 +127,16 @@ const CustomerServicePage: React.FC = () => {
   return (
     <>
       <Hero
-        title="Sistema Profissional de Atendimento para WhatsApp"
-        subtitle="Gerencie sua equipe, automatize respostas e ofereça um atendimento excepcional com nossa plataforma completa."
+        title="Sistema Profissional de Vendas para WhatsApp"
+        subtitle="Gerencie sua equipe comercial, automatize qualificação de leads e maximize suas vendas com nossa plataforma completa."
         image="https://images.pexels.com/photos/7709087/pexels-photo-7709087.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
         variant="service"
         showButtons={false}
       />
       
       <FeatureSection
-        title="Plataforma completa de atendimento"
-        subtitle="Todas as ferramentas que sua equipe precisa para oferecer um atendimento excepcional pelo WhatsApp."
+        title="Plataforma completa para vendas"
+        subtitle="Todas as ferramentas que sua equipe comercial precisa para maximizar vendas e conversões pelo WhatsApp."
         features={features}
         bgColor="bg-gray-50"
       />
@@ -145,10 +145,10 @@ const CustomerServicePage: React.FC = () => {
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="mb-6">Atendimento multiagentes</h2>
+              <h2 className="mb-6">Gestão de equipe comercial</h2>
               <p className="text-gray-600 mb-6">
-                Distribua as conversas entre sua equipe de forma inteligente, monitore o desempenho 
-                e ofereça um atendimento profissional e organizado.
+                Distribua leads entre sua equipe de vendas de forma inteligente, monitore conversões 
+                e ofereça um atendimento comercial profissional e organizado.
               </p>
               
               <ul className="space-y-4">
@@ -156,25 +156,25 @@ const CustomerServicePage: React.FC = () => {
                   <div className="h-6 w-6 rounded-full bg-success text-white flex items-center justify-center flex-shrink-0">
                     <CheckCircle size={14} />
                   </div>
-                  <span className="ml-3">Distribuição inteligente de conversas</span>
+                  <span className="ml-3">Distribuição inteligente de leads</span>
                 </li>
                 <li className="flex items-center">
                   <div className="h-6 w-6 rounded-full bg-success text-white flex items-center justify-center flex-shrink-0">
                     <CheckCircle size={14} />
                   </div>
-                  <span className="ml-3">Chatbot para primeiro atendimento</span>
+                  <span className="ml-3">Chatbot para qualificação de prospects</span>
                 </li>
                 <li className="flex items-center">
                   <div className="h-6 w-6 rounded-full bg-success text-white flex items-center justify-center flex-shrink-0">
                     <CheckCircle size={14} />
                   </div>
-                  <span className="ml-3">Histórico completo de conversas</span>
+                  <span className="ml-3">Histórico completo do funil de vendas</span>
                 </li>
                 <li className="flex items-center">
                   <div className="h-6 w-6 rounded-full bg-success text-white flex items-center justify-center flex-shrink-0">
                     <CheckCircle size={14} />
                   </div>
-                  <span className="ml-3">Relatórios e métricas de atendimento</span>
+                  <span className="ml-3">Relatórios e métricas de conversão</span>
                 </li>
               </ul>
               
@@ -204,7 +204,7 @@ const CustomerServicePage: React.FC = () => {
           <div className="text-center mb-16">
             <h2 className="mb-4">Planos e Preços</h2>
             <p className="text-gray-600 max-w-3xl mx-auto text-lg">
-              Escolha o plano ideal para seu negócio. Todos os planos incluem 7 dias de teste grátis.
+              Escolha o plano ideal para sua equipe de vendas. Todos os planos incluem 7 dias de teste grátis.
             </p>
           </div>
           
@@ -279,10 +279,10 @@ const CustomerServicePage: React.FC = () => {
             </div>
             
             <div className="order-1 lg:order-2">
-              <h2 className="mb-6">Gestão completa de atendimento</h2>
+              <h2 className="mb-6">Gestão completa de vendas</h2>
               <p className="text-gray-600 mb-6">
-                Todas as ferramentas que sua equipe precisa para oferecer um atendimento 
-                excepcional, com controle total e métricas detalhadas.
+                Todas as ferramentas que sua equipe comercial precisa para maximizar vendas, 
+                com controle total e métricas detalhadas de conversão.
               </p>
               
               <ul className="space-y-4 mb-8">
@@ -290,25 +290,25 @@ const CustomerServicePage: React.FC = () => {
                   <div className="h-6 w-6 rounded-full bg-primary-100 text-primary-600 flex items-center justify-center flex-shrink-0 mt-0.5">
                     <Users size={14} />
                   </div>
-                  <span className="ml-3">Gestão de filas e departamentos</span>
+                  <span className="ml-3">Gestão de filas de vendas e departamentos</span>
                 </li>
                 <li className="flex items-start">
                   <div className="h-6 w-6 rounded-full bg-primary-100 text-primary-600 flex items-center justify-center flex-shrink-0 mt-0.5">
                     <Users size={14} />
                   </div>
-                  <span className="ml-3">Tags e categorização de conversas</span>
+                  <span className="ml-3">Tags e categorização de leads</span>
                 </li>
                 <li className="flex items-start">
                   <div className="h-6 w-6 rounded-full bg-primary-100 text-primary-600 flex items-center justify-center flex-shrink-0 mt-0.5">
                     <Users size={14} />
                   </div>
-                  <span className="ml-3">Avaliação de satisfação do cliente</span>
+                  <span className="ml-3">Avaliação de satisfação e conversão</span>
                 </li>
                 <li className="flex items-start">
                   <div className="h-6 w-6 rounded-full bg-primary-100 text-primary-600 flex items-center justify-center flex-shrink-0 mt-0.5">
                     <Users size={14} />
                   </div>
-                  <span className="ml-3">Dashboard de performance em tempo real</span>
+                  <span className="ml-3">Dashboard de vendas em tempo real</span>
                 </li>
               </ul>
               
@@ -322,8 +322,8 @@ const CustomerServicePage: React.FC = () => {
       </section>
       
       <CTASection
-        title="Comece seu teste grátis hoje mesmo"
-        subtitle="7 dias grátis com todas as funcionalidades. Sem compromisso."
+        title="Comece a vender mais hoje mesmo"
+        subtitle="7 dias grátis com todas as funcionalidades para impulsionar suas vendas. Sem compromisso."
         buttonText="Começar agora"
         variant="dark"
         linkType="service"

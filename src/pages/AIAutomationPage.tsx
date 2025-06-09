@@ -28,71 +28,71 @@ const AIAutomationPage: React.FC = () => {
     {
       icon: <BrainCircuit size={24} />,
       title: 'Automação Especializada',
-      description: 'Nossa equipe desenvolve fluxos automatizados personalizados para seu negócio.'
+      description: 'Nossa equipe desenvolve fluxos automatizados personalizados para maximizar suas vendas e conversões.'
     },
     {
       icon: <Webhook size={24} />,
       title: 'Integrações Avançadas',
-      description: 'Conectamos seu WhatsApp com qualquer sistema ou API existente.'
+      description: 'Conectamos seu WhatsApp com CRM, sistemas de vendas e qualquer API existente.'
     },
     {
       icon: <Database size={24} />,
-      title: 'Gestão de Dados',
-      description: 'Coleta e organização inteligente das informações dos seus clientes.'
+      title: 'Gestão de Leads',
+      description: 'Coleta e organização inteligente das informações dos seus prospects e clientes.'
     },
     {
       icon: <Share2 size={24} />,
       title: 'APIs Personalizadas',
-      description: 'Desenvolvimento de integrações específicas para seu negócio.'
+      description: 'Desenvolvimento de integrações específicas para seu funil de vendas.'
     },
     {
       icon: <Settings size={24} />,
       title: 'Implementação Completa',
-      description: 'Nossa equipe configura e personaliza toda a solução para você.'
+      description: 'Nossa equipe configura e personaliza toda a solução de vendas para você.'
     },
     {
       icon: <MessageSquare size={24} />,
       title: 'Suporte Especializado',
-      description: 'Acompanhamento contínuo e ajustes conforme suas necessidades.'
+      description: 'Acompanhamento contínuo e otimizações para maximizar suas vendas.'
     }
   ];
   
   const faqs = [
     {
       question: 'Como funciona o processo de implementação?',
-      answer: 'Nossa equipe de especialistas analisa suas necessidades, desenvolve uma estratégia personalizada e implementa toda a solução. O processo inclui análise do negócio, desenvolvimento dos fluxos, integrações necessárias e acompanhamento contínuo.'
+      answer: 'Nossa equipe de especialistas analisa suas necessidades de vendas, desenvolve uma estratégia personalizada e implementa toda a solução. O processo inclui análise do funil de vendas, desenvolvimento dos fluxos, integrações necessárias e acompanhamento contínuo.'
     },
     {
-      question: 'Que tipos de automação posso implementar?',
-      answer: 'As possibilidades são infinitas! Podemos automatizar atendimento inicial, qualificação de leads, vendas, suporte, integrações com seu CRM, ERP ou qualquer outro sistema. Nossa equipe avalia seu caso específico e desenvolve a melhor solução.'
+      question: 'Que tipos de automação de vendas posso implementar?',
+      answer: 'As possibilidades são infinitas! Podemos automatizar qualificação de leads, nutrição de prospects, vendas, follow-up pós-venda, integrações com seu CRM, ERP ou qualquer outro sistema. Nossa equipe avalia seu processo de vendas e desenvolve a melhor solução.'
     },
     {
       question: 'Quanto tempo leva para implementar?',
       answer: 'O tempo varia conforme a complexidade do projeto. Após a análise inicial, fornecemos um cronograma detalhado. Tipicamente, projetos são implementados em 2-4 semanas.'
     },
     {
-      question: 'É possível integrar com meus sistemas atuais?',
-      answer: 'Sim! Podemos integrar com qualquer sistema através de APIs. Nossa equipe técnica desenvolve integrações personalizadas para suas necessidades específicas.'
+      question: 'É possível integrar com meus sistemas de vendas atuais?',
+      answer: 'Sim! Podemos integrar com qualquer sistema através de APIs. Nossa equipe técnica desenvolve integrações personalizadas para suas necessidades específicas de vendas.'
     },
     {
-      question: 'Como é feita a manutenção dos fluxos?',
-      answer: 'Nossa equipe monitora continuamente o desempenho e faz ajustes conforme necessário. Você terá acesso a um especialista dedicado para solicitar alterações e melhorias.'
+      question: 'Como é feita a manutenção dos fluxos de vendas?',
+      answer: 'Nossa equipe monitora continuamente o desempenho das vendas e faz ajustes conforme necessário. Você terá acesso a um especialista dedicado para solicitar alterações e melhorias no funil de vendas.'
     }
   ];
 
   return (
     <>
       <Hero
-        title="Automação Especializada para WhatsApp"
-        subtitle="Deixe nossa equipe de especialistas criar e implementar automações personalizadas para seu negócio, com suporte contínuo."
+        title="Automação Especializada para WhatsApp e Vendas"
+        subtitle="Deixe nossa equipe de especialistas criar e implementar automações personalizadas para maximizar suas vendas, com suporte contínuo."
         image="https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
         variant="ai"
         showButtons={false}
       />
       
       <FeatureSection
-        title="Automação profissional completa"
-        subtitle="Nossa equipe implementa soluções personalizadas que automatizam seus processos e impulsionam resultados."
+        title="Automação profissional para vendas"
+        subtitle="Nossa equipe implementa soluções personalizadas que automatizam seus processos de vendas e impulsionam resultados."
         features={features}
         bgColor="bg-gray-50"
       />
@@ -101,9 +101,9 @@ const AIAutomationPage: React.FC = () => {
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="mb-6">Implementação especializada</h2>
+              <h2 className="mb-6">Implementação especializada para vendas</h2>
               <p className="text-gray-600 mb-6">
-                Nossa equipe de especialistas cuida de todo o processo, desde a análise até a implementação e manutenção contínua da sua solução.
+                Nossa equipe de especialistas cuida de todo o processo, desde a análise do seu funil de vendas até a implementação e otimização contínua da sua solução.
               </p>
               
               <ul className="space-y-4">
@@ -111,13 +111,13 @@ const AIAutomationPage: React.FC = () => {
                   <div className="h-6 w-6 rounded-full bg-success text-white flex items-center justify-center flex-shrink-0">
                     <Zap size={14} />
                   </div>
-                  <span className="ml-3">Análise personalizada do seu negócio</span>
+                  <span className="ml-3">Análise personalizada do seu processo de vendas</span>
                 </li>
                 <li className="flex items-center">
                   <div className="h-6 w-6 rounded-full bg-success text-white flex items-center justify-center flex-shrink-0">
                     <Zap size={14} />
                   </div>
-                  <span className="ml-3">Desenvolvimento de fluxos customizados</span>
+                  <span className="ml-3">Desenvolvimento de fluxos de vendas customizados</span>
                 </li>
                 <li className="flex items-center">
                   <div className="h-6 w-6 rounded-full bg-success text-white flex items-center justify-center flex-shrink-0">
@@ -129,7 +129,7 @@ const AIAutomationPage: React.FC = () => {
                   <div className="h-6 w-6 rounded-full bg-success text-white flex items-center justify-center flex-shrink-0">
                     <Zap size={14} />
                   </div>
-                  <span className="ml-3">Suporte e manutenção contínua</span>
+                  <span className="ml-3">Otimização contínua para maximizar vendas</span>
                 </li>
               </ul>
               
@@ -154,7 +154,7 @@ const AIAutomationPage: React.FC = () => {
               <div className="absolute -top-4 -right-4 bg-primary-500 text-white px-4 py-3 rounded-xl shadow-lg">
                 <div className="text-center">
                   <div className="text-2xl font-bold">80%</div>
-                  <div className="text-xs">mais eficiência</div>
+                  <div className="text-xs">mais vendas</div>
                 </div>
               </div>
             </div>
@@ -177,9 +177,9 @@ const AIAutomationPage: React.FC = () => {
             </div>
             
             <div className="order-1 lg:order-2">
-              <h2 className="mb-6">Automação que gera resultados</h2>
+              <h2 className="mb-6">Automação que impulsiona vendas</h2>
               <p className="text-gray-600 mb-6">
-                Nossas soluções são desenvolvidas para maximizar seus resultados, com foco em eficiência e ROI.
+                Nossas soluções são desenvolvidas para maximizar suas conversões e vendas, com foco em eficiência e ROI.
               </p>
               
               <ul className="space-y-4 mb-8">
@@ -187,25 +187,25 @@ const AIAutomationPage: React.FC = () => {
                   <div className="h-6 w-6 rounded-full bg-primary-100 text-primary-600 flex items-center justify-center flex-shrink-0 mt-0.5">
                     <Bot size={14} />
                   </div>
-                  <span className="ml-3">Atendimento 24/7 automatizado</span>
+                  <span className="ml-3">Qualificação automática de leads 24/7</span>
                 </li>
                 <li className="flex items-start">
                   <div className="h-6 w-6 rounded-full bg-primary-100 text-primary-600 flex items-center justify-center flex-shrink-0 mt-0.5">
                     <Bot size={14} />
                   </div>
-                  <span className="ml-3">Integração com seus sistemas existentes</span>
+                  <span className="ml-3">Integração com CRM e sistemas de vendas</span>
                 </li>
                 <li className="flex items-start">
                   <div className="h-6 w-6 rounded-full bg-primary-100 text-primary-600 flex items-center justify-center flex-shrink-0 mt-0.5">
                     <Bot size={14} />
                   </div>
-                  <span className="ml-3">Coleta e organização de dados</span>
+                  <span className="ml-3">Nutrição automática de prospects</span>
                 </li>
                 <li className="flex items-start">
                   <div className="h-6 w-6 rounded-full bg-primary-100 text-primary-600 flex items-center justify-center flex-shrink-0 mt-0.5">
                     <Bot size={14} />
                   </div>
-                  <span className="ml-3">Relatórios e métricas detalhadas</span>
+                  <span className="ml-3">Relatórios de conversão e vendas detalhados</span>
                 </li>
               </ul>
               
@@ -221,9 +221,9 @@ const AIAutomationPage: React.FC = () => {
       <section className="section bg-white">
         <div className="container-custom">
           <div className="text-center mb-16">
-            <h2 className="mb-4">Ideal para diversos segmentos</h2>
+            <h2 className="mb-4">Ideal para diversos segmentos de vendas</h2>
             <p className="text-gray-600 max-w-3xl mx-auto text-lg">
-              Nossa equipe desenvolve soluções personalizadas para diferentes tipos de negócio
+              Nossa equipe desenvolve soluções personalizadas para diferentes tipos de negócio e estratégias de vendas
             </p>
           </div>
           
@@ -234,12 +234,12 @@ const AIAutomationPage: React.FC = () => {
               </div>
               <h3 className="text-xl font-semibold mb-3">E-commerce</h3>
               <p className="text-gray-600 mb-4">
-                Automatize vendas, suporte e pós-venda com integração completa ao seu sistema.
+                Automatize todo o funil de vendas, desde a captação até o pós-venda, com integração completa ao seu sistema.
               </p>
               <ul className="space-y-2 text-sm text-gray-700">
                 <li>• Catálogo de produtos automático</li>
                 <li>• Carrinho de compras pelo WhatsApp</li>
-                <li>• Acompanhamento de pedidos</li>
+                <li>• Follow-up de vendas automatizado</li>
                 <li>• Integração com plataforma de e-commerce</li>
               </ul>
             </div>
@@ -250,12 +250,12 @@ const AIAutomationPage: React.FC = () => {
               </div>
               <h3 className="text-xl font-semibold mb-3">Educação</h3>
               <p className="text-gray-600 mb-4">
-                Gestão de matrículas, dúvidas e comunicação com alunos de forma automatizada.
+                Automatize captação de leads, processo de vendas de cursos e comunicação com alunos.
               </p>
               <ul className="space-y-2 text-sm text-gray-700">
-                <li>• Processo de matrícula automatizado</li>
-                <li>• Distribuição de material didático</li>
-                <li>• Suporte ao aluno 24/7</li>
+                <li>• Qualificação automática de interessados</li>
+                <li>• Processo de vendas de cursos</li>
+                <li>• Nutrição de leads educacionais</li>
                 <li>• Integração com sistema acadêmico</li>
               </ul>
             </div>
@@ -266,12 +266,12 @@ const AIAutomationPage: React.FC = () => {
               </div>
               <h3 className="text-xl font-semibold mb-3">Imobiliárias</h3>
               <p className="text-gray-600 mb-4">
-                Automatize captação de leads, agendamentos e envio de informações de imóveis.
+                Automatize captação de leads, qualificação de interessados e processo de vendas de imóveis.
               </p>
               <ul className="space-y-2 text-sm text-gray-700">
                 <li>• Catálogo de imóveis automático</li>
-                <li>• Agendamento de visitas</li>
-                <li>• Qualificação de leads</li>
+                <li>• Qualificação de compradores</li>
+                <li>• Agendamento de visitas comerciais</li>
                 <li>• Integração com CRM imobiliário</li>
               </ul>
             </div>
@@ -282,13 +282,13 @@ const AIAutomationPage: React.FC = () => {
               </div>
               <h3 className="text-xl font-semibold mb-3">Saúde e Bem-estar</h3>
               <p className="text-gray-600 mb-4">
-                Automatize agendamentos, comunicação com pacientes e envio de informações médicas.
+                Automatize agendamentos, comunicação com pacientes e vendas de serviços médicos.
               </p>
               <ul className="space-y-2 text-sm text-gray-700">
                 <li>• Agendamento de consultas e exames</li>
+                <li>• Vendas de planos e tratamentos</li>
+                <li>• Follow-up pós-consulta</li>
                 <li>• Lembretes automáticos</li>
-                <li>• Suporte ao paciente 24/7</li>
-                <li>• Envio de resultados</li>
               </ul>
             </div>
 
@@ -298,13 +298,13 @@ const AIAutomationPage: React.FC = () => {
               </div>
               <h3 className="text-xl font-semibold mb-3">Restaurantes e Bares</h3>
               <p className="text-gray-600 mb-4">
-                Automatize reservas, pedidos e atendimento ao cliente para seu estabelecimento.
+                Automatize reservas, vendas de delivery e comunicação promocional com clientes.
               </p>
               <ul className="space-y-2 text-sm text-gray-700">
                 <li>• Reservas de mesas</li>
-                <li>• Pedidos para delivery/retirada</li>
+                <li>• Vendas para delivery/retirada</li>
                 <li>• Cardápio digital interativo</li>
-                <li>• Promoções e novidades</li>
+                <li>• Campanhas promocionais automáticas</li>
               </ul>
             </div>
 
@@ -314,13 +314,13 @@ const AIAutomationPage: React.FC = () => {
               </div>
               <h3 className="text-xl font-semibold mb-3">Serviços Profissionais</h3>
               <p className="text-gray-600 mb-4">
-                Automatize qualificação de leads, agendamentos e comunicação com clientes.
+                Automatize qualificação de leads, vendas de serviços e comunicação comercial.
               </p>
               <ul className="space-y-2 text-sm text-gray-700">
-                <li>• Qualificação de leads</li>
-                <li>• Agendamento de reuniões/consultas</li>
-                <li>• Envio de propostas e documentos</li>
-                <li>• Suporte ao cliente</li>
+                <li>• Qualificação automática de leads</li>
+                <li>• Agendamento de reuniões comerciais</li>
+                <li>• Envio de propostas comerciais</li>
+                <li>• Follow-up de vendas</li>
               </ul>
             </div>
           </div>
@@ -328,8 +328,8 @@ const AIAutomationPage: React.FC = () => {
       </section>
       
       <CTASection
-        title="Automatize seu WhatsApp com especialistas"
-        subtitle="Nossa equipe desenvolve e implementa a solução ideal para seu negócio. Fale com um especialista agora."
+        title="Automatize suas vendas no WhatsApp com especialistas"
+        subtitle="Nossa equipe desenvolve e implementa a solução ideal para maximizar suas vendas. Fale com um especialista agora."
         buttonText="Começar agora"
         variant="default"
         linkType="automation"

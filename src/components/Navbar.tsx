@@ -52,7 +52,7 @@ const Navbar: React.FC = () => {
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center ml-12">
               <div 
-                className="relative"
+                className="relative group"
                 onMouseEnter={() => setShowSolutions(true)}
                 onMouseLeave={() => setShowSolutions(false)}
               >
@@ -70,22 +70,25 @@ const Navbar: React.FC = () => {
                   </svg>
                 </button>
                 
-                {showSolutions && (
-                  <div className="absolute top-full left-0 mt-1 w-72 rounded-xl bg-white shadow-xl py-3 border border-gray-100">
-                    {solutions.map((solution, index) => (
-                      <Link
-                        key={index}
-                        to={solution.path}
-                        className={`block px-4 py-3 hover:bg-gray-50 transition-colors ${
-                          location.pathname === solution.path ? 'text-primary-500 bg-primary-50' : 'text-gray-800'
-                        }`}
-                      >
-                        <span className="block font-medium">{solution.title}</span>
-                        <span className="text-sm text-gray-500">{solution.description}</span>
-                      </Link>
-                    ))}
-                  </div>
-                )}
+                {/* Invisible bridge to prevent hover gap */}
+                <div className="absolute top-full left-0 w-full h-2 bg-transparent"></div>
+                
+                <div className={`absolute top-full left-0 mt-1 w-72 rounded-xl bg-white shadow-xl py-3 border border-gray-100 transition-all duration-200 ${
+                  showSolutions ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-2'
+                }`}>
+                  {solutions.map((solution, index) => (
+                    <Link
+                      key={index}
+                      to={solution.path}
+                      className={`block px-4 py-3 hover:bg-gray-50 transition-colors ${
+                        location.pathname === solution.path ? 'text-primary-500 bg-primary-50' : 'text-gray-800'
+                      }`}
+                    >
+                      <span className="block font-medium">{solution.title}</span>
+                      <span className="text-sm text-gray-500">{solution.description}</span>
+                    </Link>
+                  ))}
+                </div>
               </div>
             </div>
           </div>

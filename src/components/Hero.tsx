@@ -1,6 +1,7 @@
 import React from 'react';
 import { ArrowRight, MessageCircle, MessageSquare, Bot } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { WHATSAPP_LINKS } from '../constants';
 
 interface HeroProps {
   title: string;
@@ -31,6 +32,18 @@ const Hero: React.FC<HeroProps> = ({
     service: MessageSquare,
   }[variant];
 
+  // Get the appropriate WhatsApp link based on variant
+  const getWhatsAppLink = () => {
+    switch (variant) {
+      case 'ai':
+        return WHATSAPP_LINKS.automation;
+      case 'service':
+        return WHATSAPP_LINKS.service;
+      default:
+        return WHATSAPP_LINKS.default;
+    }
+  };
+
   return (
     <section className={`relative pt-20 pb-12 md:pt-32 md:pb-24 overflow-hidden ${gradientBg[variant]}`}>
       <div className="absolute inset-0 z-0 opacity-30">
@@ -58,6 +71,17 @@ const Hero: React.FC<HeroProps> = ({
             <p className="text-gray-600 text-lg mb-8 max-w-lg mx-auto lg:mx-0">
               {subtitle}
             </p>
+            
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+              <a href={getWhatsAppLink()} className="btn btn-primary">
+                {ctaText}
+                <ArrowRight size={18} className="ml-2" />
+              </a>
+              
+              <a href="#demo" className="btn btn-secondary">
+                Ver demonstração
+              </a>
+            </div>
           </motion.div>
           
           <motion.div

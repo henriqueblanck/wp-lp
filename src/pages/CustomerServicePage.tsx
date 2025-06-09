@@ -20,7 +20,7 @@ import {
   Headphones,
   MessageCircle
 } from 'lucide-react';
-import { WHATSAPP_LINK } from '../constants';
+import { WHATSAPP_LINKS } from '../constants';
 
 const CustomerServicePage: React.FC = () => {
   const features = [
@@ -240,7 +240,7 @@ const CustomerServicePage: React.FC = () => {
                 </div>
                 
                 <a
-                  href={WHATSAPP_LINK}
+                  href={WHATSAPP_LINKS.service}
                   className={`btn w-full ${
                     plan.popular ? 'btn-primary' : 'btn-secondary'
                   }`}
@@ -254,7 +254,7 @@ const CustomerServicePage: React.FC = () => {
           <div className="mt-12 text-center">
             <p className="text-gray-600">
               Precisa de um plano personalizado? {' '}
-              <a href={WHATSAPP_LINK} className="text-primary-500 hover:underline">
+              <a href={WHATSAPP_LINKS.service} className="text-primary-500 hover:underline">
                 Fale com nossa equipe
               </a>
             </p>
@@ -311,7 +311,7 @@ const CustomerServicePage: React.FC = () => {
                 </li>
               </ul>
               
-              <a href={WHATSAPP_LINK} className="btn btn-primary">
+              <a href={WHATSAPP_LINKS.service} className="btn btn-primary">
                 Começar teste grátis
                 <ArrowRight size={18} className="ml-2" />
               </a>
@@ -325,6 +325,7 @@ const CustomerServicePage: React.FC = () => {
         subtitle="7 dias grátis com todas as funcionalidades. Sem compromisso."
         buttonText="Começar agora"
         variant="dark"
+        linkType="service"
       />
       
       <FAQSection faqs={faqs} />

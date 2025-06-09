@@ -16,7 +16,7 @@ import {
   Headphones,
   ArrowRight
 } from 'lucide-react';
-import { WHATSAPP_LINK } from '../constants';
+import { WHATSAPP_LINKS } from '../constants';
 
 const HomePage: React.FC = () => {
   const features = [
@@ -194,6 +194,7 @@ const HomePage: React.FC = () => {
         title="Pronto para profissionalizar seu atendimento?"
         subtitle="Fale com nossos especialistas e descubra a melhor solução para seu negócio."
         buttonText="Falar com especialista"
+        linkType="default"
       />
       
       <FAQSection faqs={faqs} />

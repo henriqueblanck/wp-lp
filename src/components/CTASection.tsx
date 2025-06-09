@@ -1,24 +1,37 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, MessageCircle } from 'lucide-react';
-import { WHATSAPP_LINK } from '../constants';
+import { WHATSAPP_LINKS } from '../constants';
 
 interface CTASectionProps {
   title: string;
   subtitle: string;
   buttonText: string;
   variant?: 'default' | 'dark';
+  linkType?: 'default' | 'automation' | 'service';
 }
 
 const CTASection: React.FC<CTASectionProps> = ({
   title,
   subtitle,
   buttonText,
-  variant = 'default'
+  variant = 'default',
+  linkType = 'default'
 }) => {
   const bgClass = variant === 'default' 
     ? 'bg-gradient-to-r from-primary-500 to-secondary-500' 
     : 'bg-gray-900';
+  
+  const getWhatsAppLink = () => {
+    switch (linkType) {
+      case 'automation':
+        return WHATSAPP_LINKS.automation;
+      case 'service':
+        return WHATSAPP_LINKS.service;
+      default:
+        return WHATSAPP_LINKS.default;
+    }
+  };
   
   return (
     <section className={`py-16 ${bgClass}`}>
@@ -54,7 +67,7 @@ const CTASection: React.FC<CTASectionProps> = ({
               viewport={{ once: true }}
             >
               <a 
-                href={WHATSAPP_LINK}
+                href={getWhatsAppLink()}
                 className="btn bg-white text-primary-600 hover:bg-white/90 hover:text-primary-700 shadow-lg"
               >
                 <MessageCircle size={18} className="mr-2" />

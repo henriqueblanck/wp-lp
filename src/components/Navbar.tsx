@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import { motion } from 'framer-motion';
-import { WHATSAPP_LINK } from '../constants';
+import { WHATSAPP_LINKS } from '../constants';
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -92,7 +92,7 @@ const Navbar: React.FC = () => {
           
           <div className="hidden md:flex items-center space-x-4">
             <a 
-              href={WHATSAPP_LINK}
+              href={WHATSAPP_LINKS.default}
               target="_blank"
               rel="noopener noreferrer" 
               className="btn btn-primary"
@@ -138,7 +138,7 @@ const Navbar: React.FC = () => {
             ))}
             
             <a 
-              href={WHATSAPP_LINK}
+              href={WHATSAPP_LINKS.default}
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-primary mt-4 text-center"

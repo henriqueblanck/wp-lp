@@ -21,7 +21,7 @@ import {
   Utensils,
   Briefcase
 } from 'lucide-react';
-import { WHATSAPP_LINK } from '../constants';
+import { WHATSAPP_LINKS } from '../constants';
 
 const AIAutomationPage: React.FC = () => {
   const features = [
@@ -133,7 +133,7 @@ const AIAutomationPage: React.FC = () => {
               </ul>
               
               <div className="mt-8">
-                <a href={WHATSAPP_LINK} className="btn btn-primary">
+                <a href={WHATSAPP_LINKS.automation} className="btn btn-primary">
                   Falar com especialista
                   <ArrowRight size={18} className="ml-2" />
                 </a>
@@ -208,7 +208,7 @@ const AIAutomationPage: React.FC = () => {
                 </li>
               </ul>
               
-              <a href={WHATSAPP_LINK} className="btn btn-primary">
+              <a href={WHATSAPP_LINKS.automation} className="btn btn-primary">
                 Falar com especialista
                 <ArrowRight size={18} className="ml-2" />
               </a>
@@ -331,6 +331,7 @@ const AIAutomationPage: React.FC = () => {
         subtitle="Nossa equipe desenvolve e implementa a solução ideal para seu negócio. Fale com um especialista agora."
         buttonText="Começar agora"
         variant="default"
+        linkType="automation"
       />
       
       <FAQSection faqs={faqs} />

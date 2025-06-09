@@ -146,10 +146,10 @@ const AIAutomationPage: React.FC = () => {
                 />
               </div>
               
-              <div className="absolute -top-5 -right-5 h-24 w-24 rounded-full bg-primary-500 flex items-center justify-center text-white font-bold text-lg shadow-lg">
+              {/* Opção 1: Badge retangular mais largo */}
+              <div className="absolute -top-4 -right-4 bg-primary-500 text-white px-4 py-3 rounded-xl shadow-lg">
                 <div className="text-center">
-                  <div className="text-xs">Até</div>
-                  <div className="text-2xl">80%</div>
+                  <div className="text-2xl font-bold">80%</div>
                   <div className="text-xs">mais eficiência</div>
                 </div>
               </div>

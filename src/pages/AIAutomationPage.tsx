@@ -16,7 +16,10 @@ import {
   Database,
   Share2,
   Settings,
-  ArrowRight
+  ArrowRight,
+  HeartPulse,
+  Utensils,
+  Briefcase
 } from 'lucide-react';
 import { WHATSAPP_LINK } from '../constants';
 
@@ -269,6 +272,54 @@ const AIAutomationPage: React.FC = () => {
                 <li>• Agendamento de visitas</li>
                 <li>• Qualificação de leads</li>
                 <li>• Integração com CRM imobiliário</li>
+              </ul>
+            </div>
+
+            <div className="card p-6">
+              <div className="h-12 w-12 rounded-full bg-primary-100 text-primary-600 flex items-center justify-center mb-4">
+                <HeartPulse size={24} />
+              </div>
+              <h3 className="text-xl font-semibold mb-3">Saúde e Bem-estar</h3>
+              <p className="text-gray-600 mb-4">
+                Automatize agendamentos, comunicação com pacientes e envio de informações médicas.
+              </p>
+              <ul className="space-y-2 text-sm text-gray-700">
+                <li>• Agendamento de consultas e exames</li>
+                <li>• Lembretes automáticos</li>
+                <li>• Suporte ao paciente 24/7</li>
+                <li>• Envio de resultados</li>
+              </ul>
+            </div>
+
+            <div className="card p-6">
+              <div className="h-12 w-12 rounded-full bg-primary-100 text-primary-600 flex items-center justify-center mb-4">
+                <Utensils size={24} />
+              </div>
+              <h3 className="text-xl font-semibold mb-3">Restaurantes e Bares</h3>
+              <p className="text-gray-600 mb-4">
+                Automatize reservas, pedidos e atendimento ao cliente para seu estabelecimento.
+              </p>
+              <ul className="space-y-2 text-sm text-gray-700">
+                <li>• Reservas de mesas</li>
+                <li>• Pedidos para delivery/retirada</li>
+                <li>• Cardápio digital interativo</li>
+                <li>• Promoções e novidades</li>
+              </ul>
+            </div>
+
+            <div className="card p-6">
+              <div className="h-12 w-12 rounded-full bg-primary-100 text-primary-600 flex items-center justify-center mb-4">
+                <Briefcase size={24} />
+              </div>
+              <h3 className="text-xl font-semibold mb-3">Serviços Profissionais</h3>
+              <p className="text-gray-600 mb-4">
+                Automatize qualificação de leads, agendamentos e comunicação com clientes.
+              </p>
+              <ul className="space-y-2 text-sm text-gray-700">
+                <li>• Qualificação de leads</li>
+                <li>• Agendamento de reuniões/consultas</li>
+                <li>• Envio de propostas e documentos</li>
+                <li>• Suporte ao cliente</li>
               </ul>
             </div>
           </div>

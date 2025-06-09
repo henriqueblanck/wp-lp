@@ -10,6 +10,7 @@ interface HeroProps {
   image?: string;
   variant?: 'default' | 'ai' | 'service';
   ctaLink?: string; // Add optional custom link
+  showButtons?: boolean; // Add option to hide buttons
 }
 
 const Hero: React.FC<HeroProps> = ({
@@ -18,7 +19,8 @@ const Hero: React.FC<HeroProps> = ({
   ctaText = 'Começar agora',
   image = 'https://images.pexels.com/photos/7709087/pexels-photo-7709087.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
   variant = 'default',
-  ctaLink
+  ctaLink,
+  showButtons = true
 }) => {
   // Define different background gradients based on variant
   const gradientBg = {
@@ -76,16 +78,18 @@ const Hero: React.FC<HeroProps> = ({
               {subtitle}
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <a href={getPrimaryLink()} className="btn btn-primary">
-                {ctaText}
-                <ArrowRight size={18} className="ml-2" />
-              </a>
-              
-              <a href="#demo" className="btn btn-secondary">
-                Ver demonstração
-              </a>
-            </div>
+            {showButtons && (
+              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                <a href={getPrimaryLink()} className="btn btn-primary">
+                  {ctaText}
+                  <ArrowRight size={18} className="ml-2" />
+                </a>
+                
+                <a href="#demo" className="btn btn-secondary">
+                  Ver demonstração
+                </a>
+              </div>
+            )}
           </motion.div>
           
           <motion.div

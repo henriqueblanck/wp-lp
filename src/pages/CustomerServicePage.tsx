@@ -41,7 +41,7 @@ const CustomerServicePage: React.FC = () => {
     },
     {
       icon: <BarChart3 size={24} />,
-      title: 'Métricas de Performance',
+      title: 'Métricas de Vendas',
       description: 'Acompanhe conversões, tempo de resposta e performance da equipe comercial.'
     },
     {
@@ -308,7 +308,7 @@ const CustomerServicePage: React.FC = () => {
                   <div className="h-6 w-6 rounded-full bg-primary-100 text-primary-600 flex items-center justify-center flex-shrink-0 mt-0.5">
                     <Users size={14} />
                   </div>
-                  <span className="ml-3">Dashboard de performance em tempo real</span>
+                  <span className="ml-3">Dashboard de vendas em tempo real</span>
                 </li>
               </ul>
               

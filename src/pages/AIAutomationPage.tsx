@@ -205,7 +205,7 @@ const AIAutomationPage: React.FC = () => {
                   <div className="h-6 w-6 rounded-full bg-primary-100 text-primary-600 flex items-center justify-center flex-shrink-0 mt-0.5">
                     <Bot size={14} />
                   </div>
-                  <span className="ml-3">Relatórios de conversão detalhados</span>
+                  <span className="ml-3">Relatórios de conversão e vendas detalhados</span>
                 </li>
               </ul>
               

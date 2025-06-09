@@ -37,8 +37,8 @@ const HomePage: React.FC = () => {
     },
     {
       icon: <BarChart3 size={24} />,
-      title: 'Relatórios de Vendas',
-      description: 'Acompanhe métricas de conversão, vendas e performance da sua equipe comercial com relatórios detalhados.'
+      title: 'Relatórios Detalhados',
+      description: 'Acompanhe métricas importantes do seu atendimento e performance da sua equipe comercial.'
     }
   ];
   
@@ -175,7 +175,7 @@ const HomePage: React.FC = () => {
                   </li>
                   <li className="flex items-center text-gray-700 group-hover:text-white/90 transition-colors">
                     <Zap size={16} className="mr-2" />
-                    <span>Relatórios de vendas detalhados</span>
+                    <span>Relatórios detalhados</span>
                   </li>
                 </ul>
                 <span className="inline-flex items-center text-secondary-500 font-medium group-hover:text-white transition-colors">

@@ -58,13 +58,6 @@ const Hero: React.FC<HeroProps> = ({
             <p className="text-gray-600 text-lg mb-8 max-w-lg mx-auto lg:mx-0">
               {subtitle}
             </p>
-            
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <a href="#contato" className="btn btn-primary">
-                {ctaText}
-                <ArrowRight size={18} className="ml-2" />
-              </a>
-            </div>
           </motion.div>
           
           <motion.div

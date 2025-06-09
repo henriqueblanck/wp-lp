@@ -78,14 +78,6 @@ const CustomerServicePage: React.FC = () => {
     {
       question: 'É possível usar com múltiplos números de WhatsApp?',
       answer: 'Sim! Você pode conectar vários números de WhatsApp e gerenciar todos através de uma única interface. Ideal para empresas com diferentes departamentos ou unidades.'
-    },
-    {
-      question: 'Como funciona a integração com meu site?',
-      answer: 'Fornecemos um widget personalizado para seu site que direciona as conversas diretamente para o sistema. Também é possível integrar através de API para soluções mais específicas.'
-    },
-    {
-      question: 'Oferece suporte para instalação?',
-      answer: 'Sim! Nossa equipe oferece suporte completo para configuração inicial, treinamento da sua equipe e ajustes conforme suas necessidades. Também disponibilizamos materiais de treinamento e documentação detalhada.'
     }
   ];
 
